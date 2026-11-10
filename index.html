@@ -4,50 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#100d16">
-<meta name="description" content="Heart's art, animation, characters, music and self-development portfolio.">
-<title>Heart ♡ Portfolio</title>
-
-<!--
-COMPLETE HEART PORTFOLIO
-
-Save this file as index.html.
-
-Upload these eight images beside index.html:
-
-COVER:
-b339ace8920db8ba5b918e496af29486.jpg
-
-BACKGROUND:
-83fbacfcaf27cecd4fab358697599619.jpg
-
-PROFILE:
-ce0fa005d2f5443e93695c64347b7df8.jpg
-
-REVI:
-Messenger_creation_77571BAB-9A14-4D84-84AC-A79DFBB6F692.png
-
-RION AND KHIANNA:
-Messenger_creation_26ACA17F-2417-438D-820C-335778260A9F.jpeg
-
-ALTERNATE KHIANNA:
-60439145-5dd5-4157-b361-6e52d21bf31a_1.jpeg
-
-CATHELYN:
-768931543_4664261500471553_1508486642586904714_n.png
-
-CLASS SCHEDULE:
-Messenger_creation_E36301E9-676C-4838-85C2-C35C909B7880.jpeg
-
-Email forms use FormSubmit.
-Check kheartxs1@gmail.com for activation if required.
--->
+<meta name="description" content="Heart's creative corner: art, animation, character design, music, and self-expression.">
+<title>Heart ♡ Art, Animation & Little Daydreams</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&amp;family=DynaPuff:wght@600&amp;family=Itim&amp;display=swap"
-  rel="stylesheet"
->
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=DynaPuff:wght@600&family=Itim&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -63,29 +25,32 @@ Check kheartxs1@gmail.com for activation if required.
   --violet:#bba0ff;
   --shadow:0 18px 60px #0003;
   --radius:20px;
-  --heading:'Balsamiq Sans','Comic Sans MS',cursive;
-  --body:'Itim','Comic Sans MS',cursive;
-  --name:'DynaPuff','Balsamiq Sans',cursive;
+  --font-heading:'Balsamiq Sans','Comic Sans MS',cursive;
+  --font-body:'Itim','Comic Sans MS',cursive;
+  --font-name:'DynaPuff','Balsamiq Sans','Comic Sans MS',cursive;
 }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+
 body{
   margin:0;
   background:var(--bg);
   color:var(--ink);
-  font:17px/1.75 var(--body);
+  font:17px/1.75 var(--font-body);
 }
+
 body::before{
   content:"";
   position:fixed;
   inset:0;
   z-index:-1;
-  pointer-events:none;
   background:
     linear-gradient(#100d16db,#100d16ed),
     url("83fbacfcaf27cecd4fab358697599619.jpg") center/540px;
+  pointer-events:none;
 }
+
 body.light{
   color-scheme:light;
   --bg:#f3e7f6;
@@ -99,74 +64,44 @@ body.light{
   --violet:#7450a6;
   --shadow:0 15px 40px #41234512;
 }
+
 body.light::before{
   background:
     linear-gradient(#f3e7f6ed,#f3e7f6f5),
     url("83fbacfcaf27cecd4fab358697599619.jpg") center/540px;
 }
-[hidden]{display:none!important}
+
 a{color:inherit;text-decoration:none}
 button,input,select,textarea{font:inherit}
+button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}
 button{cursor:pointer;color:inherit}
 button:disabled{cursor:default;opacity:.45}
-button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
-button:focus-visible,a:focus-visible,input:focus-visible,
-select:focus-visible,textarea:focus-visible,summary:focus-visible{
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible{
   outline:2px solid var(--pink);
-  outline-offset:4px;
+  outline-offset:5px;
 }
+
+[hidden]{display:none!important}
 ::selection{background:#b84a9b;color:white}
-h1,h2,h3,h4,p{overflow-wrap:break-word}
-h2,h3,h4{font-family:var(--heading);font-style:normal}
-h2{font-size:clamp(34px,4vw,44px);line-height:1.15;margin:0 0 14px}
-h2 em{font-style:normal;color:var(--pink)}
-h3{font-size:22px;line-height:1.4;margin:0 0 12px}
-h4{font-size:16px;color:var(--pink);margin:0 0 9px}
-p{margin:0 0 16px}
-small{font-size:12px}
-strong{font-weight:bold}
-img{max-width:100%}
-.muted{color:var(--muted)}
-.small{font-size:15px}
-.eyebrow{
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:1.7px;
-  text-transform:uppercase;
-  color:var(--violet);
-  margin:0 0 12px;
-}
-.label{
-  font-size:12px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  color:var(--violet);
-}
-.count,.browser-note,.form-note,.canvas-hint{
-  font-size:12px;
-  color:var(--muted);
-}
-.sr-only{
-  position:absolute;
-  width:1px;
-  height:1px;
-  padding:0;
-  margin:-1px;
-  overflow:hidden;
-  clip:rect(0,0,0,0);
-  white-space:nowrap;
-  border:0;
-}
+
 .skip{
   position:fixed;
   left:15px;
-  top:-100px;
+  top:-80px;
   z-index:100;
   background:var(--pink);
   color:var(--bg);
   padding:10px;
 }
+
 .skip:focus{top:12px}
+
 .layout{
   max-width:1490px;
   margin:auto;
@@ -176,6 +111,7 @@ img{max-width:100%}
   gap:28px;
   align-items:start;
 }
+
 .sidebar{
   position:sticky;
   top:28px;
@@ -191,62 +127,82 @@ img{max-width:100%}
   flex-direction:column;
   box-shadow:var(--shadow);
 }
+
 .identity{text-align:center}
+
 .avatar{
-  height:88px;
-  width:88px;
+  height:160px;
+  width:160px;
   border:1px solid var(--violet);
   outline:5px solid var(--raised);
   margin:6px auto 20px;
   border-radius:50%;
-  background:var(--raised);
+  background:radial-gradient(circle at 30% 20%,#6c367b,#28162e 70%);
+  color:#ffd4f0;
+  display:grid;
+  place-items:center;
   position:relative;
 }
-.avatar img{
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:contain;
-  border-radius:50%;
-  background:#fff;
-  padding:4px;
-}
+
 .avatar::after{
-  content:"✦";
+  content:'✦';
   position:absolute;
   right:-8px;
-  top:-14px;
+  top:-10px;
   color:var(--pink);
   font-size:22px;
 }
-.identity .heart-wordmark{
+
+.avatar img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-width:0;
+  min-height:0;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+  padding:0;
+}
+
+.identity h1.heart-wordmark{
   display:flex;
   justify-content:center;
   align-items:center;
+  gap:0;
+  overflow:visible;
   margin:2px 0 18px;
   padding-top:8px;
-  font:600 43px/1.3 var(--name);
+  font-family:var(--font-name);
+  font-weight:600;
+  font-style:normal;
+  font-size:43px;
+  line-height:1.3;
   letter-spacing:-2px;
   text-transform:uppercase;
   white-space:nowrap;
   color:#ffe4f5;
 }
+
 .name-letter{
   display:inline-block;
   position:relative;
-  animation:heart-float 4s ease-in-out infinite;
+  animation:heart-letter-float 4s ease-in-out infinite;
   animation-delay:calc(var(--letter)*-.45s);
   -webkit-text-stroke:1px #a85bc5;
   paint-order:stroke fill;
   text-shadow:0 3px 0 #592768,1px 4px 0 #22112f;
 }
+
 .name-letter:nth-child(even){color:#dcc7ff}
+
 .letter-star{
   position:absolute;
   width:14px;
   height:14px;
   left:42%;
   top:-3px;
+  z-index:1;
   transform:rotate(-12deg);
   fill:var(--panel);
   stroke:var(--pink);
@@ -254,29 +210,64 @@ img{max-width:100%}
   stroke-linejoin:round;
   filter:drop-shadow(0 1px 0 #160d21);
 }
+
 .name-letter:nth-child(2) .letter-star{
-  top:18px;left:35%;width:12px;height:12px;stroke:var(--violet);
+  top:18px;
+  left:35%;
+  width:12px;
+  height:12px;
+  stroke:var(--violet);
 }
+
 .name-letter:nth-child(3) .letter-star{top:-7px;left:48%}
-.name-letter:nth-child(4) .letter-star{
-  top:19px;left:28%;stroke:var(--violet);
-}
+.name-letter:nth-child(4) .letter-star{top:19px;left:28%;stroke:var(--violet)}
 .name-letter:nth-child(5) .letter-star{top:-4px;left:55%}
+
 body.light .name-letter{
   text-shadow:0 3px 0 #b98fc7;
   -webkit-text-stroke:1px #754080;
 }
-@keyframes heart-float{
+
+@keyframes heart-letter-float{
   0%,100%{transform:translateY(0) rotate(-1deg)}
   50%{transform:translateY(-3px) rotate(1.5deg)}
 }
-.handle{font-size:11px;letter-spacing:2px;color:var(--violet)}
-.role{color:var(--muted);font-size:13px;line-height:1.8;margin:15px 0 24px}
-.divider{display:flex;align-items:center;gap:12px;color:var(--pink);font-size:12px}
-.divider::before,.divider::after{
-  content:"";height:1px;background:var(--line);flex:1;
+
+.handle{
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--violet);
 }
-.nav{display:flex;flex-direction:column;gap:5px;margin:20px 0}
+
+.role{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+  margin:15px 0 24px;
+}
+
+.divider{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:var(--pink);
+  font-size:11px;
+}
+
+.divider::before,.divider::after{
+  content:'';
+  height:1px;
+  background:var(--line);
+  flex:1;
+}
+
+.nav{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  margin:20px 0;
+}
+
 .nav a{
   display:flex;
   align-items:center;
@@ -286,16 +277,35 @@ body.light .name-letter{
   border-radius:10px;
   color:var(--muted);
   font-size:14px;
+  transition:background .2s,color .2s;
 }
-.nav .icon{width:19px;color:var(--violet);font-size:17px;text-align:center}
+
+.nav .icon{
+  width:19px;
+  color:var(--violet);
+  font-size:16px;
+  text-align:center;
+}
+
 .nav a:hover{background:var(--raised);color:var(--ink)}
-.nav a[aria-current="page"]{
+
+.nav a[aria-current=page]{
   background:linear-gradient(100deg,#c3418e25,#9170d522);
   border-color:var(--line);
   color:var(--pink);
 }
-.nav a[aria-current="page"]::after{content:"✧";margin-left:auto}
-.sidebar-foot{margin-top:auto;border-top:1px solid var(--line);padding-top:18px}
+
+.nav a[aria-current=page]::after{
+  content:'✧';
+  margin-left:auto;
+}
+
+.sidebar-foot{
+  margin-top:auto;
+  border-top:1px solid var(--line);
+  padding-top:18px;
+}
+
 .theme{
   display:flex;
   justify-content:space-between;
@@ -303,31 +313,53 @@ body.light .name-letter{
   width:100%;
   border:0;
   background:none;
-  font-size:12px;
+  font-size:10px;
   color:var(--muted);
   padding:3px;
 }
-.theme span:last-child{color:var(--pink);font-size:18px}
-.sidebar-foot p{font-size:11px;text-align:center;color:var(--muted);margin:15px 0 0}
+
+.theme span:last-child{color:var(--pink);font-size:17px}
+
+.sidebar-foot p{
+  font-size:9px;
+  text-align:center;
+  color:var(--muted);
+  margin:15px 0 0;
+}
+
 .mobile-bar{display:none}
 main{min-width:0}
+
 .topbar{
-  display:flex;justify-content:space-between;align-items:center;
-  gap:15px;padding:2px 3px 20px;font-size:11px;color:var(--muted);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  padding:2px 3px 20px;
+  font-size:11px;
+  color:var(--muted);
 }
+
 .breadcrumb{letter-spacing:1px}
 .breadcrumb strong{font-weight:normal;color:var(--pink)}
 .top-status{display:flex;align-items:center;gap:7px}
+
 .status-dot{
-  width:5px;height:5px;border-radius:50%;
-  background:var(--pink);box-shadow:0 0 10px #ff91ce88;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--pink);
+  box-shadow:0 0 10px #ff91ce88;
 }
+
 .page{animation:appear .3s ease both}
 .page:focus{outline:none}
+
 @keyframes appear{
   from{opacity:0;transform:translateY(5px)}
   to{opacity:1;transform:none}
 }
+
 .panel{
   background:var(--panel);
   border:1px solid var(--line);
@@ -335,41 +367,121 @@ main{min-width:0}
   box-shadow:var(--shadow);
   overflow:hidden;
 }
+
 .section-pad{padding:32px}
-.page-header{margin:5px 0 28px}
-.page-header p{max-width:630px;font-size:15px;color:var(--muted)}
-.hero{display:grid;grid-template-columns:1fr;background:#110d16}
-.hero-art{
-  grid-row:1;
-  width:100%;
-  height:clamp(240px,32vw,390px);
-  object-fit:cover;
-  object-position:center 43%;
-  display:block;
-  background:black;
+
+.eyebrow{
+  font-size:12px;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1.7px;
+  color:var(--violet);
+  margin:0 0 12px;
 }
+
+.muted{color:var(--muted)}
+h2,h3,h4,p{overflow-wrap:break-word}
+
+h2,h3,h4{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-style:normal;
+  letter-spacing:.01em;
+}
+
+h2{
+  font-size:40px;
+  line-height:1.1;
+  margin:0 0 14px;
+}
+
+h2 em{
+  font-family:inherit;
+  font-weight:inherit;
+  font-style:normal;
+  color:var(--pink);
+}
+
+h3{font-size:17px;line-height:1.4;margin:0 0 12px}
+h4{font-size:13px;color:var(--pink);margin:0 0 9px}
+p{margin:0 0 16px}
+.small{font-size:15px;line-height:1.8}
+
+.page-header{margin:5px 0 28px}
+
+.page-header p{
+  max-width:630px;
+  font-size:15px;
+  line-height:1.8;
+  color:var(--muted);
+}
+
+.page-header h2{font-size:clamp(34px,4vw,44px)}
+
+.hero{
+  display:grid;
+  grid-template-columns:1fr;
+  min-height:0;
+  background:#110d16;
+  position:relative;
+}
+
 .hero-copy{
   grid-row:2;
   padding:28px 35px 32px;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+  justify-content:center;
   color:#fff0fa;
 }
+
 .hero .eyebrow{color:#d6b8ff}
+
 .hero h2{
+  font-family:var(--font-heading);
   font-size:clamp(36px,4.1vw,60px);
   letter-spacing:-.025em;
   line-height:1.15;
   margin-bottom:22px;
 }
+
 .hero h2 em{color:#ff91ce}
+
 .hero-copy>p:not(.eyebrow){
-  font-size:15px;line-height:1.8;color:#d1b9db;max-width:540px;
+  font-size:15px;
+  line-height:1.8;
+  color:#d1b9db;
+  max-width:540px;
 }
-.hero-actions{display:flex;align-items:center;gap:19px;flex-wrap:wrap;margin-top:10px}
+
+.hero-art{
+  grid-row:1;
+  width:100%;
+  height:clamp(240px,32vw,390px);
+  min-height:0;
+  max-height:none;
+  aspect-ratio:auto;
+  object-fit:cover;
+  object-position:center 43%;
+  display:block;
+  background:black;
+}
+
+.hero-actions{
+  display:flex;
+  align-items:center;
+  gap:19px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
 .btn{
   display:inline-flex;
   justify-content:center;
   align-items:center;
-  gap:15px;
+  gap:18px;
   background:var(--pink);
   color:var(--bg);
   border:1px solid var(--pink);
@@ -378,41 +490,104 @@ main{min-width:0}
   font-size:14px;
   font-weight:bold;
 }
+
+.hero .btn{
+  background:#ff91ce;
+  color:#160e1b;
+  border-color:#ff91ce;
+}
+
 .btn:hover{filter:brightness(1.08)}
 .btn.outline{background:transparent;color:var(--pink);border-color:var(--line)}
-.hero .btn{background:#ff91ce;color:#160e1b;border-color:#ff91ce}
+
 .link{
-  background:none;border:0;border-bottom:1px solid var(--line);
-  padding:0;color:var(--pink);font-size:14px;
+  background:none;
+  border:0;
+  border-bottom:1px solid var(--line);
+  padding:0;
+  color:var(--pink);
+  font-size:11px;
 }
+
 .hero .link{color:#e4caff}
+
 .hero-foot{
-  display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;
-  padding:12px 20px;background:var(--raised);
-  font-size:11px;letter-spacing:1px;color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+  padding:12px 20px;
+  background:var(--raised);
+  font-size:11px;
+  letter-spacing:1px;
+  color:var(--muted);
 }
+
 .hero-foot strong{color:var(--pink);font-weight:normal}
-.welcome{display:grid;grid-template-columns:1.4fr 1fr;gap:35px;padding:32px 0}
-.welcome h3{font-size:24px;color:var(--pink)}
-.welcome p{font-size:15px;color:var(--muted)}
+
+.welcome{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:35px;
+  padding:32px 0;
+}
+
+.welcome h3{
+  font-family:var(--font-heading);
+  font-size:24px;
+  color:var(--pink);
+}
+
+.welcome p{font-size:15px;line-height:1.8;color:var(--muted)}
 .chips{display:flex;gap:7px;flex-wrap:wrap}
+
 .chip{
-  font-size:12px;color:var(--violet);border:1px solid var(--line);
-  padding:4px 9px;border-radius:30px;
+  font-size:12px;
+  color:var(--violet);
+  border:1px solid var(--line);
+  padding:4px 9px;
+  border-radius:30px;
 }
+
 .intro-quote{
-  border-left:1px solid var(--line);padding-left:28px;
-  display:flex;flex-direction:column;justify-content:center;
+  border-left:1px solid var(--line);
+  padding-left:28px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
+
 .intro-quote blockquote{
-  font:400 23px/1.5 var(--heading);margin:0 0 12px;
+  font:400 23px/1.5 var(--font-heading);
+  margin:0 0 12px;
+  color:var(--ink);
 }
-.intro-quote small{color:var(--muted);font-size:12px;letter-spacing:.4px}
-.section-title{display:flex;align-items:center;gap:18px;margin:0 0 22px}
-.section-title h3{margin:0;font-size:17px}
-.section-title::after{content:"";height:1px;background:var(--line);flex:1}
-.section-title .eyebrow{margin:0 0 0 auto}
+
+.intro-quote small{
+  color:var(--muted);
+  font-size:12px;
+  letter-spacing:.4px;
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin:0 0 22px;
+}
+
+.section-title h3{white-space:nowrap;margin:0;font-size:15px}
+
+.section-title::after{
+  content:'';
+  height:1px;
+  background:var(--line);
+  flex:1;
+}
+
+.section-title .eyebrow{margin-left:auto;margin-bottom:0}
 .about-panel{padding:28px;margin-bottom:24px}
+
 details{
   border:1px solid var(--line);
   border-radius:10px;
@@ -420,7 +595,9 @@ details{
   overflow:hidden;
   background:var(--raised);
 }
+
 details:last-child{margin-bottom:0}
+
 summary{
   cursor:pointer;
   list-style:none;
@@ -432,348 +609,684 @@ summary{
   align-items:center;
   gap:15px;
 }
+
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:20px;color:var(--pink);line-height:1}
-details[open]>summary::after{content:"−"}
+
+summary::after{
+  content:'+';
+  font-size:20px;
+  color:var(--pink);
+  line-height:1;
+}
+
+details[open]>summary::after{content:'−'}
 details[open]>summary{border-bottom:1px solid var(--line);color:var(--pink)}
-.detail-body{padding:20px;font-size:15px;line-height:1.8;color:var(--muted)}
+
+.detail-body{
+  padding:20px;
+  font-size:15px;
+  line-height:1.8;
+  color:var(--muted);
+}
+
 .detail-body p:last-child{margin-bottom:0}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .trait{padding:0 0 16px}
-.trait strong{display:block;color:var(--pink);font-family:var(--heading);margin-bottom:5px}
-.trait p{margin:0;font-size:15px}
+
+.trait strong{
+  display:block;
+  color:var(--pink);
+  font-family:var(--font-heading);
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.trait p{margin:0;font-size:15px;line-height:1.8}
+
 .callout{
-  padding:18px 20px;border-left:2px solid var(--pink);
-  background:var(--raised);margin-top:15px;
-  font-size:15px;color:var(--muted);
+  padding:18px 20px;
+  border-left:2px solid var(--pink);
+  background:var(--raised);
+  margin-top:15px;
+  font-size:12px;
+  color:var(--muted);
 }
+
 .tabs{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 25px}
+
 .tab,.filter{
-  border:1px solid var(--line);background:transparent;color:var(--muted);
-  border-radius:9px;padding:9px 15px;font-size:14px;
+  border:1px solid var(--line);
+  background:transparent;
+  color:var(--muted);
+  border-radius:9px;
+  padding:9px 15px;
+  font-size:14px;
 }
-.tab[aria-selected="true"],.filter[aria-pressed="true"]{
-  background:var(--pink);color:var(--bg);border-color:var(--pink);
+
+.tab[aria-selected=true],.filter[aria-pressed=true]{
+  background:var(--pink);
+  color:var(--bg);
+  border-color:var(--pink);
 }
-.subfilters{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0}
+
+.subfilters{display:flex;gap:7px;row-gap:9px;flex-wrap:wrap;margin:20px 0}
 .filter{border-radius:30px;padding:5px 13px}
-.filters-row{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.filters-row{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.count{font-size:12px;color:var(--muted)}
+
 .empty{
-  border:1px dashed var(--line);border-radius:14px;
-  padding:55px 25px;text-align:center;
+  border:1px dashed var(--line);
+  border-radius:14px;
+  padding:55px 25px;
+  text-align:center;
   background:linear-gradient(150deg,#8756a10c,#e66bb40a);
 }
-.empty-symbol{font-size:40px;color:var(--pink);line-height:1.2;margin-bottom:15px}
-.empty h3{font-size:25px}
-.empty p{font-size:15px;max-width:390px;margin:0 auto 15px;color:var(--muted)}
+
+.empty-symbol{
+  font-size:40px;
+  color:var(--pink);
+  font-family:Georgia,serif;
+  line-height:1.2;
+  margin:0 0 15px;
+}
+
+.empty h3{font:700 25px var(--font-heading)}
+.empty p{font-size:15px;line-height:1.8;max-width:390px;margin:0 auto 15px;color:var(--muted)}
 .empty .chip{display:inline-block}
 .gallery{columns:3;column-gap:15px}
+
 .art-card{
-  width:100%;display:inline-block;break-inside:avoid;
-  border:1px solid var(--line);padding:0;background:var(--raised);
-  border-radius:12px;overflow:hidden;text-align:left;margin-bottom:15px;
+  width:100%;
+  display:inline-block;
+  break-inside:avoid;
+  border:1px solid var(--line);
+  padding:0;
+  background:var(--raised);
+  border-radius:12px;
+  overflow:hidden;
+  text-align:left;
+  margin-bottom:15px;
 }
+
+.art-card:hover{border-color:var(--pink)}
 .art-card img{width:100%;display:block}
 .art-card span{display:block;padding:12px;font-size:12px}
-.art-card:hover,.journal-card:hover{border-color:var(--pink)}
+
+.art-card .art-date{
+  display:block;
+  color:var(--violet);
+  font-size:11px;
+  padding:0 12px 12px;
+}
+
 .video-card{border:1px solid var(--line);padding:18px;border-radius:12px}
 .video-card video{width:100%;border-radius:9px;display:block;background:#000}
 .video-card h3{margin:12px 0 5px}
-.video-card p{font-size:15px;color:var(--muted)}
+.video-card p{font-size:15px;line-height:1.8;color:var(--muted)}
+
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.card{background:var(--raised);border:1px solid var(--line);border-radius:13px;padding:21px}
-.card-icon{font-size:23px;color:var(--pink);margin-bottom:13px}
-.card h3{font-size:22px}
-.card p{font-size:15px;color:var(--muted)}
+
+.card{
+  background:var(--raised);
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:21px;
+}
+
+.card-icon{font-size:21px;color:var(--pink);margin-bottom:13px}
+.card h3{font:700 22px var(--font-heading)}
+.card p{font-size:15px;line-height:1.8;color:var(--muted)}
+
+.label{
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--violet);
+}
+
 .life-map{
-  border:1px solid var(--line);border-radius:15px;padding:28px;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:28px;
   background:radial-gradient(ellipse at top,#59306c30,transparent 65%);
 }
+
 .map-root{
-  position:relative;z-index:1;text-align:center;
-  margin:0 auto 28px;padding:10px 15px;
-  border:1px solid var(--violet);border-radius:30px;
-  width:fit-content;font-size:15px;color:var(--violet);
+  text-align:center;
+  margin:0 auto 28px;
+  padding:10px 15px;
+  border:1px solid var(--violet);
+  border-radius:30px;
+  width:fit-content;
+  font-size:12px;
+  color:var(--violet);
 }
-.journey-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.journey-path{text-align:center;position:relative}
-.journey-path::before{
-  content:"";position:absolute;top:-28px;bottom:25px;left:50%;
-  width:1px;background:var(--line);
-}
-.journey-path h4{
-  position:relative;border:1px solid var(--line);background:var(--panel);
-  border-radius:12px;padding:14px 7px;min-height:65px;
-  display:grid;place-content:center;
-}
+
 .goal{
-  width:100%;padding:18px;text-align:left;
-  border:1px solid var(--line);border-radius:13px;
-  background:var(--raised);position:relative;
-  margin-top:22px;min-height:135px;display:block;
+  width:100%;
+  padding:24px;
+  text-align:left;
+  border:1px solid var(--line);
+  border-radius:13px;
+  background:var(--raised);
+  position:relative;
 }
-.goal:hover{border-color:var(--pink)}
-.goal strong{font:700 14px var(--heading)}
+
+.goal strong{font-family:var(--font-heading);font-size:14px}
 .goal small{display:block;color:var(--muted);font-size:12px;margin-top:8px}
-.goal .label{margin:0 0 7px}
-.task-entry{display:flex;gap:10px;margin:22px 0}
-.task-entry input{flex:1;min-width:0}
-.task-list{list-style:none;margin:0;padding:0}
-.task{
-  display:flex;align-items:center;gap:12px;
-  padding:14px;border:1px solid var(--line);
-  border-radius:10px;background:var(--raised);margin-bottom:10px;
+.goal:hover{border-color:var(--pink)}
+
+.journey-paths{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
 }
-.task input{width:17px;height:17px;accent-color:var(--hot);margin:0;flex-shrink:0}
-.task label{flex:1;font-size:14px;color:var(--ink);margin:0}
-.task.done label{text-decoration:line-through;color:var(--muted)}
-.icon-btn{border:0;background:none;color:var(--muted);padding:0 5px;font-size:20px}
-.progress{height:5px;background:var(--raised);border-radius:9px;overflow:hidden;margin-bottom:8px}
-.progress>span{
-  height:100%;display:block;width:0;
-  background:linear-gradient(90deg,var(--hot),var(--violet));
+
+.journey-path{text-align:center;position:relative}
+
+.journey-path h4{
+  border:1px solid var(--line);
+  background:var(--panel);
+  border-radius:12px;
+  padding:14px 7px;
+  min-height:65px;
+  display:grid;
+  place-content:center;
+  position:relative;
 }
+
+.journey-path::before{
+  content:'';
+  position:absolute;
+  top:-28px;
+  bottom:25px;
+  left:50%;
+  width:1px;
+  background:var(--line);
+}
+
+.journey-node{margin-top:22px;min-height:135px;padding:18px;display:block}
+.journey-node .label{margin:0 0 7px}
+.journey-map .map-root{position:relative;z-index:1}
+.browser-note{font-size:12px;color:var(--muted)}
+
 .timetable-wrap{
-  overflow:auto;border:1px solid var(--line);border-radius:12px;
-  max-height:650px;margin-bottom:12px;
+  overflow:auto;
+  border:1px solid var(--line);
+  border-radius:12px;
+  max-height:650px;
+  margin-bottom:12px;
 }
+
 .timetable{
-  border-collapse:separate;border-spacing:2px;table-layout:fixed;
-  min-width:1010px;width:100%;font-size:11px;
+  border-collapse:separate;
+  border-spacing:2px;
+  table-layout:fixed;
+  min-width:1010px;
+  width:100%;
+  font-size:10px;
 }
+
 .timetable th{
-  background:var(--raised);padding:9px 5px;
-  color:var(--violet);font-weight:normal;
+  background:var(--raised);
+  padding:9px 5px;
+  color:var(--violet);
+  font-weight:normal;
 }
-.timetable thead th{position:sticky;top:0;z-index:3;height:44px}
-.timetable th:first-child{width:82px;position:sticky;left:0;z-index:2}
+
+.timetable thead th{
+  position:sticky;
+  top:0;
+  z-index:3;
+  background:var(--raised);
+  height:44px;
+}
+
+.timetable th:first-child{
+  width:82px;
+  position:sticky;
+  left:0;
+  z-index:2;
+}
+
 .timetable thead th:first-child{z-index:4}
 .timetable tbody tr{height:33px}
 .timetable td{border-radius:5px}
 .free-slot{background:var(--raised);opacity:.45}
+
 .class-cell{
   background:linear-gradient(145deg,#d8499c24,#bba0ff26);
-  border:1px solid var(--hot);padding:0;vertical-align:middle;
+  border:1px solid var(--hot);
+  padding:0;
+  vertical-align:middle;
 }
+
 .class-cell button{
-  border:0;background:transparent;width:100%;height:100%;
-  padding:12px 6px;text-align:center;font-size:11px;line-height:1.6;
-  display:flex;flex-direction:column;gap:7px;
-  justify-content:center;align-items:center;
+  border:0;
+  background:transparent;
+  width:100%;
+  height:100%;
+  padding:12px 6px;
+  text-align:center;
+  font-size:10px;
+  line-height:1.6;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  justify-content:center;
+  align-items:center;
 }
+
 .class-cell button:hover{background:#ff91ce16}
-.class-cell strong{color:var(--pink);font:700 14px var(--heading)}
-.class-cell .label{font-size:9px;letter-spacing:.4px}
+.class-cell strong{color:var(--pink);font:700 14px var(--font-heading)}
+.class-cell .label{font-size:8px;letter-spacing:.4px}
 .class-cell button>span:last-child{color:var(--muted)}
 .schedule-list{display:grid;gap:15px;margin-bottom:20px}
+
 .schedule-day{
-  padding:18px;border:1px solid var(--line);
-  border-radius:12px;background:var(--raised);
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--raised);
 }
+
 .schedule-day p{margin:0}
+
 .class-list-item{
-  display:block;text-align:left;width:100%;border:1px solid var(--line);
-  border-radius:8px;background:var(--panel);padding:12px;margin-top:9px;
+  display:block;
+  text-align:left;
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--panel);
+  padding:12px;
+  margin-top:9px;
 }
+
 .class-list-item strong,.class-list-item span{display:block}
 .class-list-item strong{color:var(--pink);font-size:14px}
-.class-list-item span{font-size:12px;color:var(--muted);margin-top:5px}
+.class-list-item span{font-size:11px;color:var(--muted);margin-top:5px}
+
 .search-row{display:flex;gap:12px;margin-bottom:22px}
 .search-row input{flex:1;min-width:0}
 .search-row select{max-width:170px}
 .journal-list{display:grid;gap:14px}
+
 .journal-card{
-  padding:23px;border:1px solid var(--line);border-radius:13px;
-  background:var(--raised);display:block;text-align:left;width:100%;
+  padding:23px;
+  border:1px solid var(--line);
+  border-radius:13px;
+  background:var(--raised);
+  display:block;
+  text-align:left;
+  width:100%;
 }
-.journal-card h3{font-size:23px;margin:8px 0}
-.journal-card p{font-size:15px;color:var(--muted);margin:0}
+
+.journal-card h3{font:700 23px var(--font-heading);margin:8px 0}
+.journal-card p{font-size:15px;line-height:1.8;color:var(--muted);margin-bottom:0}
+.journal-card:hover{border-color:var(--pink)}
 .quote-box{text-align:center;padding:26px}
+
 .quote-box blockquote{
-  font:400 28px/1.5 var(--heading);
-  margin:10px 0 25px;min-height:100px;
-  display:grid;align-content:center;
+  font:400 28px/1.5 var(--font-heading);
+  margin:10px 0 25px;
+  min-height:100px;
+  display:grid;
+  align-content:center;
 }
+
 .quote-controls{display:flex;align-items:center;justify-content:center;gap:22px}
+
 .round{
-  background:var(--raised);border:1px solid var(--line);
-  border-radius:50%;width:35px;height:35px;color:var(--pink);
+  background:var(--raised);
+  border:1px solid var(--line);
+  border-radius:50%;
+  width:35px;
+  height:35px;
+  color:var(--pink);
 }
+
 .archive-bar{
-  display:flex;justify-content:space-between;gap:15px;
-  border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  border-bottom:1px solid var(--line);
+  padding-bottom:20px;
+  margin-bottom:25px;
 }
-.character-tabs{padding-bottom:20px;border-bottom:1px solid var(--line)}
+
 .character-profile{
-  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
-  gap:30px;align-items:start;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  gap:30px;
+  align-items:start;
 }
+
 .character-art-column{min-width:0}
+
 .character-art-button{
-  display:block;width:100%;padding:0;overflow:hidden;
-  border:1px solid var(--line);border-radius:14px;
-  background:var(--raised);text-align:left;
+  display:block;
+  width:100%;
+  padding:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--raised);
+  text-align:left;
 }
+
 .character-art-button img{display:block;width:100%;height:auto}
-.character-art-button span{display:block;padding:10px 15px;font-size:12px;color:var(--pink)}
+.character-art-button span{display:block;padding:10px 15px;font-size:10px;color:var(--pink)}
 .character-art-button:hover{border-color:var(--pink)}
 .character-credit{font-size:12px;margin-top:12px}
-.character-info h3{font-size:52px;line-height:1.1;margin:0 0 16px}
+
+.character-info h3{
+  font:700 52px/1 var(--font-heading);
+  letter-spacing:.01em;
+  margin:0 0 16px;
+}
+
 .character-info h3 span{color:var(--pink);font-size:27px;margin-left:15px}
 .character-info .chips{margin:0 0 20px}
-.character-intro{font-size:15px;color:var(--muted)}
-.character-facts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:23px 0}
+.character-intro{font-size:15px;line-height:1.8;color:var(--muted)}
+
+.character-facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin:23px 0;
+}
+
 .character-facts>div{
-  padding:13px 15px;background:var(--raised);
-  border:1px solid var(--line);border-radius:9px;
+  padding:13px 15px;
+  background:var(--raised);
+  border:1px solid var(--line);
+  border-radius:9px;
 }
-.character-facts dt{color:var(--violet);text-transform:uppercase;letter-spacing:1px;font-size:12px}
-.character-facts dd{margin:5px 0 0;font-size:15px}
+
+.character-facts dt{
+  color:var(--violet);
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  font-size:9px;
+}
+
+.character-facts dd{margin:5px 0 0;font-size:12px;color:var(--ink)}
+
 .character-lore{
-  border-left:2px solid var(--pink);padding:14px 18px;
-  background:var(--raised);margin:0 0 22px;
+  border-left:2px solid var(--pink);
+  padding:14px 18px;
+  background:var(--raised);
+  margin:0 0 22px;
 }
-.character-lore h4{font-size:20px;margin:0 0 8px}
-.character-lore p{color:var(--muted);font-size:15px;margin:0}
+
+.character-lore h4{font:700 20px var(--font-heading);margin:0 0 8px}
+.character-lore p{color:var(--muted);font-size:15px;line-height:1.8;margin:0}
+.character-tabs{padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:25px}
 .character-story{grid-column:1/-1;margin:0}
 .character-story .detail-body{max-width:900px}
 .character-art-switch+.character-art-switch{margin-top:25px}
 .character-art-switch>.label{margin-bottom:10px}
-.drawing-layout{display:grid;grid-template-columns:165px 1fr;gap:20px;align-items:start}
+.character-story ul{padding-left:18px;margin-top:0}
+.character-story li{margin-bottom:7px}
+
+.drawing-layout{
+  display:grid;
+  grid-template-columns:165px 1fr;
+  gap:20px;
+  align-items:start;
+}
+
 .toolbox{display:grid;gap:16px}
-.toolbox input[type="color"]{padding:3px;height:40px}
-.toolbox input[type="range"]{padding:0;accent-color:var(--hot)}
+.toolbox label{font-size:10px}
+.toolbox input[type=color]{padding:3px;height:40px;width:100%}
+.toolbox input[type=range]{padding:0;accent-color:var(--hot);width:100%}
 .toolbox .btn{width:100%}
 .tool-pair{display:flex;gap:8px}
-.tool-pair .btn{padding:8px;font-size:12px}
+.tool-pair .btn{padding:8px;font-size:10px}
 .canvas-wrap{min-width:0}
+
 .canvas{
-  background:white;display:block;width:100%;height:auto;
-  aspect-ratio:1.25;border-radius:12px;border:1px solid var(--line);
-  touch-action:none;cursor:crosshair;
+  background:white;
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1.25;
+  border-radius:12px;
+  border:1px solid var(--line);
+  touch-action:none;
+  cursor:crosshair;
 }
-.canvas-hint{margin:10px 0}
+
+.canvas-hint{font-size:12px;color:var(--muted);margin:10px 0}
+
+.sr-only{
+  position:absolute;
+  clip:rect(0,0,0,0);
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
 label{display:block;color:var(--muted);font-size:14px}
+
 input,textarea,select{
-  background:var(--bg);border:1px solid var(--line);
-  border-radius:8px;padding:11px 12px;color:var(--ink);
-  width:100%;font-size:14px;margin-top:7px;
+  background:var(--bg);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:11px 12px;
+  color:var(--ink);
+  width:100%;
+  font-size:14px;
+  margin-top:7px;
 }
+
 input::placeholder,textarea::placeholder{color:var(--muted);opacity:.7}
 textarea{min-height:125px;resize:vertical}
 .field{margin-bottom:17px}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-note{font-size:12px;color:var(--muted);line-height:1.8}
 .commission-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;margin-top:30px}
-.steps{padding-left:20px;color:var(--muted);font-size:15px}
+.steps{padding-left:20px;color:var(--muted);font-size:15px;line-height:1.8}
 .steps li{padding:7px 0}
+
 .form-card{
-  background:var(--raised);border:1px solid var(--line);
-  padding:25px;border-radius:14px;
+  background:var(--raised);
+  border:1px solid var(--line);
+  padding:25px;
+  border-radius:14px;
 }
-.status{font-size:14px;min-height:20px;color:var(--pink);margin:12px 0 0}
+
+.status{font-size:11px;min-height:20px;color:var(--pink);margin:12px 0 0}
 .contact-card{padding:40px}
-.contact-card h3{font-size:26px;color:var(--pink)}
+.contact-card h3{font:700 26px var(--font-heading);color:var(--pink)}
+
 .contact-line{
-  display:flex;justify-content:space-between;align-items:center;
-  gap:15px;padding:18px 0;border-bottom:1px solid var(--line);flex-wrap:wrap;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+  flex-wrap:wrap;
 }
+
 .contact-line:last-child{border:0}
-.contact-line small{display:block;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+
+.contact-line small{
+  display:block;
+  font-size:9px;
+  color:var(--muted);
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
 .contact-line a{font-size:14px;color:var(--pink)}
+
 .footer{
-  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
-  margin:24px 3px 0;color:var(--muted);font-size:11px;padding-bottom:8px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  margin:24px 3px 0;
+  color:var(--muted);
+  font-size:11px;
+  padding-bottom:8px;
 }
+
 .footer span:last-child{color:var(--violet)}
+
 dialog{
-  color:var(--ink);background:var(--panel);
-  border:1px solid var(--line);border-radius:18px;padding:30px;
-  max-width:650px;width:calc(100% - 32px);max-height:85dvh;
-  overflow:auto;box-shadow:0 30px 90px #0009;
+  color:var(--ink);
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:30px;
+  max-width:650px;
+  width:calc(100% - 32px);
+  max-height:85dvh;
+  overflow:auto;
+  box-shadow:0 30px 90px #0009;
 }
+
 dialog::backdrop{background:#0b0713ce;backdrop-filter:blur(6px)}
 dialog h2{font-size:32px;padding-right:25px}
-dialog p{color:var(--muted);font-size:15px}
+dialog p{color:var(--muted);font-size:15px;line-height:1.8}
 dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
 .dialog-close{position:absolute;right:15px;top:13px}
+.modal-body h3{color:var(--pink);font-size:14px;margin-top:20px}
+
 @media(min-width:1500px){
   .layout{gap:35px;padding-top:35px}
   .sidebar{top:35px}
 }
+
 @media(max-width:1120px){
   .layout{grid-template-columns:215px minmax(0,1fr);gap:20px;padding:20px}
   .sidebar{top:20px;height:calc(100dvh - 40px);padding-inline:16px}
-  .identity .heart-wordmark{font-size:37px}
   .section-pad{padding:26px}
+  .cards{gap:10px}
+  .card{padding:18px}
+  .nav a{padding:8px 10px}
   .drawing-layout{grid-template-columns:145px 1fr}
 }
+
+@media(max-width:1120px) and (min-width:851px){
+  .identity h1.heart-wordmark{font-size:37px}
+}
+
 @media(max-width:1050px){
   .character-profile{grid-template-columns:1fr;gap:22px}
   .character-art-column{max-width:540px}
   .character-info h3{font-size:46px}
 }
+
 @media(max-width:850px){
   .layout{grid-template-columns:1fr;padding:0 16px 20px;gap:0}
+
   .mobile-bar{
-    position:sticky;top:0;z-index:30;display:flex;
-    align-items:center;justify-content:space-between;
-    margin:0 -16px 18px;background:var(--bg);
-    border-bottom:1px solid var(--line);padding:12px 20px;
+    position:sticky;
+    top:0;
+    z-index:30;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 -16px 18px;
+    background:var(--bg);
+    border-bottom:1px solid var(--line);
+    padding:12px 20px;
   }
-  .mobile-logo{font:600 26px var(--name);color:var(--pink)}
+
+  .mobile-logo{
+    font:600 26px var(--font-name);
+    letter-spacing:-1px;
+    color:var(--pink);
+  }
+
+  .mobile-logo span{color:var(--pink)}
+
   .mobile-menu{
-    border:1px solid var(--line);border-radius:8px;
-    background:var(--panel);font-size:14px;padding:7px 12px;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:var(--panel);
+    font-size:11px;
+    padding:7px 12px;
   }
+
   .sidebar{
-    position:fixed;top:64px;left:16px;bottom:16px;z-index:40;
-    width:260px;height:auto;min-height:0;max-height:none;
-    display:none;box-shadow:0 15px 70px #000b;
+    position:fixed;
+    top:64px;
+    left:16px;
+    bottom:16px;
+    z-index:40;
+    width:260px;
+    height:auto;
+    min-height:0;
+    max-height:none;
+    display:none;
+    box-shadow:0 15px 70px #000b;
   }
+
   .sidebar.is-open{display:flex}
-  .sidebar .avatar{height:65px;width:65px;margin-bottom:13px}
-  .identity .heart-wordmark{font-size:40px}
+  .sidebar .avatar{height:136px;width:136px;margin-bottom:13px}
   .role{margin:9px 0 16px}
   .nav{margin-block:14px}
   .nav a{padding:7px 12px}
+  .sidebar-foot p{margin-top:10px}
   .topbar{padding-bottom:15px}
 }
+
 @media(max-width:560px){
   .top-status{display:none}
   .hero-copy{padding:25px 23px 28px}
-  .hero h2{font-size:38px}
+  .hero h2{font-size:38px;max-width:320px}
   .hero-art{height:240px}
+  .hero-actions{margin-top:3px}
   .hero-foot{padding:12px 17px;gap:7px}
   .welcome{grid-template-columns:1fr;gap:20px;padding:28px 4px}
   .intro-quote{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}
   .intro-quote blockquote{font-size:22px}
   .section-pad,.about-panel{padding:22px 18px}
+  .section-title h3{white-space:normal}
   .two-col,.cards,.commission-layout,.form-grid{grid-template-columns:1fr}
   .cards{gap:12px}
+  .trait{padding-bottom:10px}
+  .page-header{margin-bottom:24px}
   .tabs{gap:7px}
   .tab{padding:8px 10px}
   .empty{padding:38px 18px}
   .gallery{columns:2}
   .drawing-layout{grid-template-columns:1fr;gap:18px}
   .toolbox{grid-template-columns:1fr 1fr;gap:12px}
-  .draw-actions{grid-column:1/-1}
-  .life-map{padding:18px}
-  .journey-paths{grid-template-columns:1fr}
-  .journey-path::before{top:0}
-  .journey-path h4{min-height:0}
-  .journey-path+.journey-path{margin-top:18px}
-  .goal{min-height:0}
+  .toolbox .draw-actions{grid-column:1/-1;display:flex;gap:10px}
+  .toolbox .draw-actions>*{flex:1}
+  .toolbox label input,.toolbox label select{height:35px}
+  .toolbox input[type=range]{height:35px}
+  .life-map{padding:22px 18px}
+  .map-root{margin-bottom:17px}
   .quote-box blockquote{font-size:24px}
   .search-row{flex-direction:column;gap:0}
   .search-row select{max-width:none}
   .contact-card{padding:26px 20px}
   .form-card{padding:20px}
   .filters-row{align-items:start;flex-direction:column;gap:0}
+  .journey-paths{grid-template-columns:1fr}
+  .journey-path::before{top:0}
+  .journey-node{min-height:0}
+  .journey-map{padding:18px}
+  .journey-path h4{min-height:0}
+  .journey-path+.journey-path{margin-top:18px}
+  .journey-node .label{font-size:11px}
   .character-info h3{font-size:40px}
 }
+
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition:none!important}
+  *,*::before,*::after{
+    animation:none!important;
+    transition:none!important;
+  }
 }
 </style>
 </head>
@@ -782,29 +1295,60 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
 <a href="#main" class="skip">Skip to content</a>
 
 <div class="layout">
+
   <div class="mobile-bar">
-    <a class="mobile-logo" href="#about">heart ♡</a>
-    <button
-      class="mobile-menu"
-      id="menu-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="sidebar"
-    >Explore ☰</button>
+    <a class="mobile-logo" href="#about">heart<span>♡</span></a>
+    <button class="mobile-menu" id="menu-toggle"
+      aria-expanded="false" aria-controls="sidebar">
+      Explore ☰
+    </button>
   </div>
 
   <aside class="sidebar" id="sidebar" aria-label="Profile and navigation">
+
     <div class="identity">
       <div class="avatar">
         <img
-          data-image="profile"
-          width="735"
-          height="714"
-          alt="Temporary profile picture: a green cartoon face inside a pink heart."
+          src="aeb297c9e1d4fda4ca90979a558c9017.jpg"
+          width="736"
+          height="663"
+          alt="A happy white cat against a colorful rainbow and cloud background."
         >
       </div>
 
-      <h1 class="heart-wordmark" id="heart-name" aria-label="Heart"></h1>
+      <h1 class="heart-wordmark" aria-label="Heart">
+        <span class="name-letter" style="--letter:0" aria-hidden="true">
+          H
+          <svg class="letter-star" viewBox="0 0 24 24" focusable="false">
+            <path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.8 6.8-1Z"/>
+          </svg>
+        </span>
+        <span class="name-letter" style="--letter:1" aria-hidden="true">
+          e
+          <svg class="letter-star" viewBox="0 0 24 24" focusable="false">
+            <path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.8 6.8-1Z"/>
+          </svg>
+        </span>
+        <span class="name-letter" style="--letter:2" aria-hidden="true">
+          a
+          <svg class="letter-star" viewBox="0 0 24 24" focusable="false">
+            <path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.8 6.8-1Z"/>
+          </svg>
+        </span>
+        <span class="name-letter" style="--letter:3" aria-hidden="true">
+          r
+          <svg class="letter-star" viewBox="0 0 24 24" focusable="false">
+            <path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.8 6.8-1Z"/>
+          </svg>
+        </span>
+        <span class="name-letter" style="--letter:4" aria-hidden="true">
+          t
+          <svg class="letter-star" viewBox="0 0 24 24" focusable="false">
+            <path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.8 6.8-1Z"/>
+          </svg>
+        </span>
+      </h1>
+
       <div class="handle">@KHEART67</div>
       <p class="role">
         Artist · Aspiring Animator<br>
@@ -815,61 +1359,93 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
     <div class="divider" aria-hidden="true">✧ ♡ ✧</div>
 
     <nav class="nav" aria-label="Portfolio sections">
-      <a href="#about"><span class="icon" aria-hidden="true">♡</span>About me</a>
-      <a href="#works"><span class="icon" aria-hidden="true">✎</span>The collection</a>
-      <a href="#study"><span class="icon" aria-hidden="true">✦</span>Study corner</a>
-      <a href="#journal"><span class="icon" aria-hidden="true">☾</span>Little thoughts</a>
-      <a href="#characters"><span class="icon" aria-hidden="true">♧</span>Character archive</a>
-      <a href="#lounge"><span class="icon" aria-hidden="true">✿</span>Visitor’s lounge</a>
-      <a href="#commissions"><span class="icon" aria-hidden="true">✧</span>Commissions</a>
-      <a href="#contact"><span class="icon" aria-hidden="true">↗</span>Get in touch</a>
+      <a href="#about" aria-current="page">
+        <span class="icon" aria-hidden="true">♡</span>About me
+      </a>
+      <a href="#works">
+        <span class="icon" aria-hidden="true">✎</span>The collection
+      </a>
+      <a href="#study">
+        <span class="icon" aria-hidden="true">✦</span>Study corner
+      </a>
+      <a href="#journal">
+        <span class="icon" aria-hidden="true">☾</span>Little thoughts
+      </a>
+      <a href="#characters">
+        <span class="icon" aria-hidden="true">♧</span>Character archive
+      </a>
+      <a href="#lounge">
+        <span class="icon" aria-hidden="true">✿</span>Visitor’s lounge
+      </a>
+      <a href="#commissions">
+        <span class="icon" aria-hidden="true">✧</span>Commissions
+      </a>
+      <a href="#contact">
+        <span class="icon" aria-hidden="true">↗</span>Get in touch
+      </a>
     </nav>
 
     <div class="sidebar-foot">
-      <button class="theme" id="theme-toggle" type="button" aria-pressed="false">
+      <button class="theme" id="theme-toggle" aria-pressed="false">
         <span id="theme-label">A little more light?</span>
         <span aria-hidden="true" id="theme-icon">☾</span>
       </button>
-      <p>Made of music, art &amp; a little chaos.</p>
+      <p>Made of music, art & a little chaos.</p>
     </div>
+
   </aside>
 
   <main id="main">
+
     <div class="topbar">
       <span class="breadcrumb">
         HEART’S LITTLE CORNER /
         <strong id="current-page">ABOUT ME</strong>
       </span>
       <span class="top-status">
-        <span class="status-dot" aria-hidden="true"></span>
-        A work in progress, just like me.
+        <span class="status-dot"></span>
+        Still unfinished
       </span>
     </div>
 
     <!-- ABOUT ME -->
-    <section class="page" id="about" tabindex="-1" aria-labelledby="about-heading">
+
+    <section class="page" id="about" tabindex="-1"
+      aria-labelledby="about-heading">
+
       <div class="panel">
         <div class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">This area is still unfinished/work in progress</p>
-            <h2 id="about-heading">Soft heart.<br><em>Loud imagination.</em></h2>
-            <p>Art, Animation, Music, Self-expression. Things I'm enthusiastic about.</p>
+            <p class="eyebrow">
+              This area is still unfinished/work in progress
+            </p>
+            <h2 id="about-heading">
+              Welcome gais,<br><em>pls like me :3</em>
+            </h2>
+            <p>
+              Art, Animation, Music, Self-expression.
+              Things I'm enthusiastic about.
+            </p>
             <div class="hero-actions">
-              <a class="btn" href="#works">Explore my work ↗</a>
+              <a class="btn" href="#works">
+                Explore my work <span aria-hidden="true">↗</span>
+              </a>
               <a class="link" href="#commissions">Create with me ♡</a>
             </div>
           </div>
+
           <img
             class="hero-art"
-            data-image="cover"
+            src="b339ace8920db8ba5b918e496af29486.jpg"
+            alt="Pink and purple pixel-art collage of a guitar, headphones, roses, butterflies, and a hand making a rock gesture."
             width="736"
             height="736"
-            alt="Temporary cover: a pink and purple pixel-art collage of a guitar, headphones, roses and butterflies."
           >
         </div>
+
         <div class="hero-foot">
           <span>PORTRAITS · ILLUSTRATION · ANIMATION</span>
-          <span><strong>✧</strong> ART, WITHOUT APOLOGIES.</span>
+          <span><strong>✧</strong> Unmotivated Artist who wants money</span>
         </div>
       </div>
 
@@ -877,9 +1453,9 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
         <div>
           <h3>Hello, I’m Heart ♡</h3>
           <p>
-            An artist, aspiring 2D and 3D animator, and character designer in
-            the making. I’m drawn to expressive worlds, thoughtful details,
-            and the stories a single image can hold.
+            An artist, aspiring 2D and 3D animator, and character designer
+            in the making. I’m drawn to expressive worlds, thoughtful
+            details, and the stories a single image can hold.
           </p>
           <div class="chips">
             <span class="chip">Creative</span>
@@ -889,8 +1465,10 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
           </div>
         </div>
         <div class="intro-quote">
-          <blockquote>“something motivational...”</blockquote>
-          <small>why bother to be like everyone else, when you can just be yourself?</small>
+          <blockquote>
+            “Why bother to be like everyone else, when you can just be yourself?”
+          </blockquote>
+          <small>Is this motivational enough?</small>
         </div>
       </div>
 
@@ -904,12 +1482,13 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
           <summary>About me · The person behind the art</summary>
           <div class="detail-body">
             <p>
-              I go by <strong>Heart</strong>, and you can find me online as
-              <strong>KHeart67</strong>. I’m an aspiring 2D and 3D animator
-              and character designer who enjoys drawing, music, and visual
-              storytelling. Portraits and original characters give me a way
-              to explore feelings, personalities, and worlds that exist in
-              my imagination.
+              I go by <strong style="color:var(--pink)">Heart</strong>,
+              and you can find me online as
+              <strong style="color:var(--pink)">KHeart67</strong>.
+              I’m an aspiring 2D and 3D animator and character designer
+              who enjoys drawing, music, and visual storytelling.
+              Portraits and original characters give me a way to explore
+              feelings, personalities, and worlds that exist in my imagination.
             </p>
             <p>
               I’m still building my skills through drawing projects,
@@ -921,14 +1500,13 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
               This website is both my creative portfolio and a record of
               my self-development. Alongside my artworks and characters,
               it shows what I’m learning about my strengths, the habits
-              I’m working on, and the kind of person and artist I want
-              to become.
+              I’m working on, and the kind of person and artist I want to become.
             </p>
           </div>
         </details>
 
         <details>
-          <summary>My life mission &amp; vision</summary>
+          <summary>My life mission & vision</summary>
           <div class="detail-body two-col">
             <div>
               <h4>My mission</h4>
@@ -937,8 +1515,7 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
                 animation, and character design skills through practice,
                 experimentation, and feedback. I want to express myself
                 honestly, treat people with kindness and fairness, and
-                build habits that help me follow through on what matters
-                to me.
+                build habits that help me follow through on what matters to me.
               </p>
               <p>
                 In everyday life, this means setting manageable goals,
@@ -949,11 +1526,11 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
             <div>
               <h4>My vision</h4>
               <p>
-                To grow into a 2D and 3D animator and character designer who
-                creates expressive characters and meaningful visual stories
-                with other creative people. Beyond a career, I want to
-                become more confident, consistent, and comfortable being
-                myself.
+                To grow into a 2D and 3D animator and character designer
+                who creates expressive characters and meaningful visual
+                stories with other creative people. Beyond a career, I
+                want to become more confident, consistent, and comfortable
+                being myself.
               </p>
               <p>
                 I want a life where creativity and music have a place,
@@ -965,15 +1542,16 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
         </details>
 
         <details>
-          <summary>My strengths &amp; weaknesses · Understanding myself</summary>
+          <summary>My strengths & weaknesses · Understanding myself</summary>
           <div class="detail-body">
             <p>
               My strengths map connects patterns from my personality
               results, learning-style inventory, and character strengths.
               Looking at them together helps me understand why some
-              approaches feel natural to me and why other parts of creative
-              work need more support.
+              approaches feel natural to me and why other parts of
+              creative work need more support.
             </p>
+
             <div class="two-col">
               <div class="trait">
                 <strong>✧ Creative explorer</strong>
@@ -985,16 +1563,18 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
                   finished work.
                 </p>
               </div>
+
               <div class="trait">
                 <strong>♡ Compassionate collaborator</strong>
                 <p>
                   Kindness, fairness, honesty, and teamwork remind me to
                   consider other people’s perspectives. These strengths
                   matter when I listen, give feedback, or work with others.
-                  I’m also learning that being considerate includes speaking
-                  up about my own needs.
+                  I’m also learning that being considerate includes
+                  speaking up about my own needs.
                 </p>
               </div>
+
               <div class="trait">
                 <strong>☾ Thoughtful visual learner</strong>
                 <p>
@@ -1005,6 +1585,7 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
                   practice exercises.
                 </p>
               </div>
+
               <div class="trait">
                 <strong>✿ Self-aware striver</strong>
                 <p>
@@ -1016,6 +1597,7 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
                 </p>
               </div>
             </div>
+
             <h4>Where I need support</h4>
             <p>
               I sometimes overthink my work, struggle to maintain
@@ -1024,6 +1606,7 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
               erase my strengths, but they show me where I need a more
               supportive routine.
             </p>
+
             <h4>What the results helped me understand</h4>
             <p>
               Being creative and caring doesn’t automatically make me
@@ -1044,43 +1627,48 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
               speaking up. Small deadlines, visual plans, and finishable
               steps help me give my ideas a little more structure.
             </p>
+
             <ul>
               <li>
-                <strong>Consistency:</strong> choose one manageable drawing
-                or animation exercise and make room for it in my week.
+                <strong>Consistency:</strong>
+                choose one manageable drawing or animation exercise
+                and make room for it in my week.
               </li>
               <li>
-                <strong>Overthinking:</strong> define a small goal for a
-                piece, finish a draft, and choose one thing to improve next time.
+                <strong>Overthinking:</strong>
+                define a small goal for a piece, finish a draft, and choose
+                one thing to improve next time.
               </li>
               <li>
-                <strong>Confidence:</strong> share a work in progress or
-                ask for specific feedback instead of waiting until
-                everything feels perfect.
+                <strong>Confidence:</strong>
+                share a work in progress or ask for specific feedback
+                instead of waiting until everything feels perfect.
               </li>
               <li>
-                <strong>Speaking up:</strong> practice asking questions,
-                contributing ideas, and explaining what I need respectfully.
+                <strong>Speaking up:</strong>
+                practice asking questions, contributing ideas, and
+                explaining what I need respectfully.
               </li>
             </ul>
+
             <p>
-              My goal is to support the creativity, care, and curiosity I
-              already have with confidence and steady action. The life map
-              in my study corner gives these intentions a place to begin.
+              My goal is to support the creativity, care, and curiosity
+              I already have with confidence and steady action. The growth
+              map in my study corner gives these intentions a place to begin.
             </p>
             <a class="link" href="#study">Visit my study corner ↗</a>
           </div>
         </details>
 
         <details>
-          <summary>My personal values &amp; life philosophy</summary>
+          <summary>My personal values & life philosophy</summary>
           <div class="detail-body">
             <p>
               Creativity, kindness, fairness, and honesty matter to me.
               I want to make things that feel personal, respect different
               perspectives, and stay open to learning from others. I also
-              value the freedom to express myself through art, music, and
-              the way I present myself.
+              value the freedom to express myself through art, music,
+              and the way I present myself.
             </p>
             <p>
               I want my work to leave room for emotion, personality, and
@@ -1099,19 +1687,19 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
       <div class="panel about-panel">
         <div class="section-title"><h3>My learning background</h3></div>
         <details>
-          <summary>Drawing studies &amp; creative practice</summary>
+          <summary>Drawing studies & creative practice</summary>
           <div class="detail-body">
             <p>
               My learning includes Drawing 1 plates and a midterm drawing
               project, alongside personal sketches, portraits, and original
               character artwork. Working on both class projects and
-              personal pieces gives me opportunities to explore ideas and
-              practice completing work.
+              personal pieces gives me opportunities to explore ideas
+              and practice completing work.
             </p>
             <p>
-              I also attend guitar workshops. Music is another part of how
-              I express myself, and learning an instrument gives me another
-              reason to practice patiently and keep trying.
+              I also attend guitar workshops. Music is another part of
+              how I express myself, and learning an instrument gives me
+              another reason to practice patiently and keep trying.
             </p>
             <p>
               I’m building toward 2D and 3D animation and character design
@@ -1132,7 +1720,7 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
               <span class="chip">2D animation</span>
               <span class="chip">3D animation</span>
               <span class="chip">Character design</span>
-              <span class="chip">Sketches &amp; studies</span>
+              <span class="chip">Sketches & studies</span>
             </div>
             <p style="margin-top:16px">
               I’m building my portfolio through personal exploration and
@@ -1144,9 +1732,9 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
           <summary>How I learn</summary>
           <div class="detail-body">
             <p>
-              I learn best by seeing and doing. Visual references, diagrams,
-              demonstrations, and hands-on experiments help me understand
-              an idea and make it my own.
+              I learn best by seeing and doing. Visual references,
+              diagrams, demonstrations, and hands-on experiments help me
+              understand an idea and make it my own.
             </p>
             <p>
               I’m practicing how to turn that curiosity into a more
@@ -1157,10 +1745,13 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
       </div>
     </section>
 
-    <!-- ARTWORKS -->
-    <section class="page" id="works" tabindex="-1" aria-labelledby="works-heading" hidden>
+    <!-- ART COLLECTION -->
+
+    <section class="page" id="works" tabindex="-1"
+      aria-labelledby="works-heading" hidden>
+
       <div class="page-header">
-        <p class="eyebrow">Made from little sparks of imagination</p>
+        <p class="eyebrow">This artist daydreams a lot.</p>
         <h2 id="works-heading">The <em>collection.</em></h2>
         <p>
           Finished pieces, small experiments, and the process in between.
@@ -1169,10 +1760,22 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
       </div>
 
       <div class="panel section-pad">
+
         <div class="tabs" role="tablist" aria-label="Work categories">
-          <button class="tab" id="work-art-tab" role="tab" aria-selected="true" aria-controls="work-art" data-work="art">Artworks</button>
-          <button class="tab" id="work-motion-tab" role="tab" aria-selected="false" aria-controls="work-motion" data-work="motion" tabindex="-1">Animations</button>
-          <button class="tab" id="work-three-tab" role="tab" aria-selected="false" aria-controls="work-three" data-work="three" tabindex="-1">3D explorations</button>
+          <button class="tab" id="work-art-tab" role="tab"
+            aria-selected="true" aria-controls="work-art" data-work="art">
+            Artworks
+          </button>
+          <button class="tab" id="work-motion-tab" role="tab"
+            aria-selected="false" aria-controls="work-motion"
+            data-work="motion" tabindex="-1">
+            Animations
+          </button>
+          <button class="tab" id="work-three-tab" role="tab"
+            aria-selected="false" aria-controls="work-three"
+            data-work="three" tabindex="-1">
+            3D explorations
+          </button>
         </div>
 
         <div id="work-art" role="tabpanel" aria-labelledby="work-art-tab">
@@ -1183,37 +1786,50 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
               <button class="filter" data-filter="illustrations" aria-pressed="false">Illustrations</button>
               <button class="filter" data-filter="characters" aria-pressed="false">Characters</button>
               <button class="filter" data-filter="sketches" aria-pressed="false">Sketches</button>
+              <button class="filter" data-filter="fanart" aria-pressed="false">Fan art</button>
+              <button class="filter" data-filter="paintings" aria-pressed="false">Paintings</button>
             </div>
-            <span class="count" id="art-count"></span>
+            <span class="count" id="art-count">21 pieces</span>
           </div>
+
           <div class="gallery" id="art-gallery"></div>
+
           <div class="empty" id="art-empty" hidden>
             <div class="empty-symbol" aria-hidden="true">✧</div>
             <h3>A little gallery in the making.</h3>
-            <p>There are no pieces in this category yet.</p>
+            <p>
+              There are no pieces in this category yet. More portraits,
+              illustrations, and little pieces of my imagination will
+              find a home here as I add them.
+            </p>
             <span class="chip">More artworks coming later ♡</span>
           </div>
         </div>
 
-        <div id="work-motion" role="tabpanel" aria-labelledby="work-motion-tab" hidden>
+        <div id="work-motion" role="tabpanel"
+          aria-labelledby="work-motion-tab" hidden>
           <div id="motion-gallery" class="two-col"></div>
           <div class="empty" id="motion-empty">
             <div class="empty-symbol" aria-hidden="true">▷</div>
             <h3>Little ideas, brought to life.</h3>
             <p>
-              This space is waiting for my animation studies and finished clips.
-              I’m exploring how movement can carry a feeling.
+              This space is waiting for my animation studies and finished
+              clips. I’m exploring how movement can carry a feeling.
             </p>
             <span class="chip">Animation corner in progress</span>
           </div>
         </div>
 
-        <div id="work-three" role="tabpanel" aria-labelledby="work-three-tab" hidden>
+        <div id="work-three" role="tabpanel"
+          aria-labelledby="work-three-tab" hidden>
           <div id="three-gallery" class="gallery"></div>
           <div class="empty" id="three-empty">
             <div class="empty-symbol" aria-hidden="true">◇</div>
             <h3>Another dimension to explore.</h3>
-            <p>A future home for 3D studies, models, and animation experiments.</p>
+            <p>
+              A future home for 3D studies, models, and animation
+              experiments as I build my skills.
+            </p>
             <span class="chip">Learning, one experiment at a time</span>
           </div>
         </div>
@@ -1221,7 +1837,10 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
     </section>
 
     <!-- STUDY CORNER -->
-    <section class="page" id="study" tabindex="-1" aria-labelledby="study-heading" hidden>
+
+    <section class="page" id="study" tabindex="-1"
+      aria-labelledby="study-heading" hidden>
+
       <div class="page-header">
         <p class="eyebrow">A softer approach to growing</p>
         <h2 id="study-heading">The study <em>corner.</em></h2>
@@ -1230,153 +1849,763 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
 
       <div class="panel section-pad">
         <div class="tabs" role="tablist" aria-label="Study tools">
-          <button class="tab" id="study-goals-tab" role="tab" aria-selected="true" aria-controls="study-goals" data-study="goals">Life map</button>
-          <button class="tab" id="study-tasks-tab" role="tab" aria-selected="false" aria-controls="study-tasks" data-study="tasks" tabindex="-1">Creative checklist</button>
-          <button class="tab" id="study-schedule-tab" role="tab" aria-selected="false" aria-controls="study-schedule" data-study="schedule" tabindex="-1">Class schedule</button>
+          <button class="tab" id="study-goals-tab" role="tab"
+            aria-selected="true" aria-controls="study-goals"
+            data-study="goals">
+            Life map
+          </button>
+          <button class="tab" id="study-schedule-tab" role="tab"
+            aria-selected="false" aria-controls="study-schedule"
+            data-study="schedule" tabindex="-1">
+            Class schedule
+          </button>
         </div>
 
-        <div id="study-goals" role="tabpanel" aria-labelledby="study-goals-tab">
+        <div id="study-goals" role="tabpanel"
+          aria-labelledby="study-goals-tab">
+
           <h3>My life map</h3>
           <p class="small muted">
             A possible path toward the artist and person I want to become.
             Click a node for a suggested SMART goal. These are flexible
             practice ideas, not fixed commitments or deadlines.
           </p>
-          <div class="life-map">
+
+          <div class="life-map journey-map">
             <div class="map-root">♡ The artist I’m becoming</div>
-            <div class="journey-paths" id="life-map-paths"></div>
+            <div class="journey-paths">
+
+              <div class="journey-path">
+                <h4>✎ Drawing & characters</h4>
+
+                <button class="goal journey-node" data-goal="drawing"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 01</small>
+                  <strong>Build my drawing practice</strong>
+                  <small>Start with small studies ↗</small>
+                </button>
+
+                <button class="goal journey-node" data-goal="characters"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 02</small>
+                  <strong>Develop original characters</strong>
+                  <small>Expressions, poses & reference sheets ↗</small>
+                </button>
+
+                <button class="goal journey-node" data-goal="portfolio"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 03</small>
+                  <strong>Build a portfolio</strong>
+                  <small>Select, reflect & share ↗</small>
+                </button>
+              </div>
+
+              <div class="journey-path">
+                <h4>✦ 2D & 3D animation</h4>
+
+                <button class="goal journey-node" data-goal="animation"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 01</small>
+                  <strong>Explore animation</strong>
+                  <small>Timing, movement & storytelling ↗</small>
+                </button>
+
+                <button class="goal journey-node" data-goal="three-study"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 02</small>
+                  <strong>Try a small 3D study</strong>
+                  <small>One simple model at a time ↗</small>
+                </button>
+
+                <button class="goal journey-node" data-goal="short-story"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 03</small>
+                  <strong>Tell a little visual story</strong>
+                  <small>Connect characters and motion ↗</small>
+                </button>
+              </div>
+
+              <div class="journey-path">
+                <h4>♡ Personal growth</h4>
+
+                <button class="goal journey-node" data-goal="confidence"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 01</small>
+                  <strong>Grow with confidence</strong>
+                  <small>Finish, reflect & share ↗</small>
+                </button>
+
+                <button class="goal journey-node" data-goal="routine"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 02</small>
+                  <strong>Build a kinder routine</strong>
+                  <small>Small goals & realistic practice ↗</small>
+                </button>
+
+                <button class="goal journey-node" data-goal="voice"
+                  type="button" aria-haspopup="dialog">
+                  <small class="label">Step 03</small>
+                  <strong>Express myself</strong>
+                  <small>Art, music & my own voice ↗</small>
+                </button>
+              </div>
+
+            </div>
           </div>
-          <div class="callout">“Still figuring things out. Still moving forward.”</div>
+
+          <div class="callout">
+            “Still figuring things out. Still moving forward.”
+          </div>
         </div>
 
-        <div id="study-tasks" role="tabpanel" aria-labelledby="study-tasks-tab" hidden>
-          <h3>Your creative checklist</h3>
-          <p class="small muted">
-            Make a little room for the things you want to create.
-            Your checklist is saved in this browser.
-          </p>
-          <form class="task-entry" id="task-form">
-            <label class="sr-only" for="task-input">New creative task</label>
-            <input id="task-input" placeholder="One small creative step…" required maxlength="180">
-            <button class="btn" type="submit">Add +</button>
-          </form>
-          <div class="progress" aria-hidden="true"><span id="task-progress"></span></div>
-          <p class="small muted" id="task-count" role="status"></p>
-          <ul class="task-list" id="task-list"></ul>
-          <p id="storage-status" class="browser-note" role="status"></p>
-        </div>
+        <div id="study-schedule" role="tabpanel"
+          aria-labelledby="study-schedule-tab" hidden>
 
-        <div id="study-schedule" role="tabpanel" aria-labelledby="study-schedule-tab" hidden>
           <h3>My class schedule</h3>
           <p class="small muted">
             A little look at my class week. Times are in Philippine time
-            (PHT / UTC+8). A blank day means no classes are listed in this timetable.
+            (PHT / UTC+8). A blank day means no classes are listed
+            in this timetable.
           </p>
+
           <div class="tabs" role="group" aria-label="Schedule view">
-            <button class="filter" type="button" data-schedule-view="week" aria-pressed="true" aria-controls="schedule-week">Weekly timetable</button>
-            <button class="filter" type="button" data-schedule-view="list" aria-pressed="false" aria-controls="schedule-list">Day-by-day list</button>
+            <button class="filter" type="button"
+              data-schedule-view="week" aria-pressed="true"
+              aria-controls="schedule-week">
+              Weekly timetable
+            </button>
+            <button class="filter" type="button"
+              data-schedule-view="list" aria-pressed="false"
+              aria-controls="schedule-list">
+              Day-by-day list
+            </button>
           </div>
-          <div
-            id="schedule-week"
-            class="timetable-wrap"
+
+          <div id="schedule-week" class="timetable-wrap"
             role="region"
             aria-label="Weekly timetable; scroll horizontally to see all days"
-            tabindex="0"
-          ></div>
+            tabindex="0">
+            <table class="timetable">
+              <caption class="sr-only">
+                Heart’s weekly class schedule in Philippine time
+              </caption>
+              <thead id="schedule-head"></thead>
+              <tbody id="schedule-body"></tbody>
+            </table>
+          </div>
+
           <p class="browser-note">
             On a small screen, swipe across the timetable or choose the
             day-by-day list. Classes ending at 6:00 PM occupy the final
             5:30–6:00 PM slot.
           </p>
+
           <div id="schedule-list" class="schedule-list" hidden></div>
-          <button class="link" type="button" id="schedule-original">View original timetable ↗</button>
+
+          <button class="link" type="button" id="schedule-original">
+            View original timetable ↗
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- JOURNAL AND QUOTES -->
-    <section class="page" id="journal" tabindex="-1" aria-labelledby="journal-heading" hidden>
+    <!-- JOURNAL -->
+
+    <section class="page" id="journal" tabindex="-1"
+      aria-labelledby="journal-heading" hidden>
+
       <div class="page-header">
         <p class="eyebrow">Thoughts between the sketches</p>
         <h2 id="journal-heading">Little <em>thoughts.</em></h2>
         <p>
-          A place for creative reflections, things I’m learning,
-          and reminders I need along the way.
+          A place for creative reflections, things I’m learning, and
+          reminders I need along the way.
         </p>
       </div>
+
       <div class="panel section-pad">
         <div class="search-row">
           <label class="sr-only" for="journal-search">Search journal</label>
-          <input id="journal-search" type="search" placeholder="Find a little thought…">
-          <label class="sr-only" for="journal-filter">Filter journal by topic</label>
+          <input type="search" id="journal-search"
+            placeholder="Find a little thought…">
+
+          <label class="sr-only" for="journal-filter">
+            Filter journal by topic
+          </label>
           <select id="journal-filter">
             <option value="all">All topics</option>
             <option value="reflection">Reflection</option>
             <option value="process">Creative process</option>
           </select>
         </div>
+
         <div class="journal-list" id="journal-list"></div>
-        <p id="journal-empty" class="small muted" role="status" hidden>
+        <p id="journal-empty" class="muted small" role="status" hidden>
           No thoughts match that search. Try another word.
         </p>
       </div>
+
       <div class="panel quote-box" style="margin-top:22px">
-        <p class="eyebrow">For the beautifully different</p>
+        <p class="eyebrow">Things people say about me qwq</p>
+
         <div aria-live="polite" aria-atomic="true">
-          <blockquote id="quote-text"></blockquote>
+          <blockquote id="quote-text">
+            "Siguro strengths mo is maganda naman work mo,
+            sadyang ayaw mo lang gumawa." -Koda
+          </blockquote>
         </div>
+
         <div class="quote-controls">
-          <button class="round" id="quote-prev" type="button" aria-label="Previous quote">←</button>
-          <span class="count" id="quote-count"></span>
-          <button class="round" id="quote-next" type="button" aria-label="Next quote">→</button>
+          <button class="round" id="quote-prev" aria-label="Previous quote">←</button>
+          <span class="count" id="quote-count">01 / 06</span>
+          <button class="round" id="quote-next" aria-label="Next quote">→</button>
         </div>
+
         <p class="small muted" style="margin-top:18px;margin-bottom:0">
-          Original words written for this portfolio.
+          Quotes from Koda, people, and original portfolio reminders.
         </p>
       </div>
     </section>
 
-    <!-- ORIGINAL CHARACTERS -->
-    <section class="page" id="characters" tabindex="-1" aria-labelledby="characters-heading" hidden>
+    <!-- CHARACTER ARCHIVE -->
+
+    <section class="page" id="characters" tabindex="-1"
+      aria-labelledby="characters-heading" hidden>
+
       <div class="page-header">
         <p class="eyebrow">Every character begins with a little curiosity</p>
         <h2 id="characters-heading">The character <em>archive.</em></h2>
         <p>
-          My original characters, their artwork, and the stories taking shape
-          along the way. Choose a name to meet them.
+          My original characters, their artwork, and the stories taking
+          shape along the way. Choose a name to meet them.
         </p>
       </div>
+
       <div class="panel section-pad">
         <div class="archive-bar">
           <span class="label">Original characters</span>
-          <span class="count">04 in the archive</span>
+          <span class="count">07 in the archive</span>
         </div>
-        <div class="tabs character-tabs" id="character-tabs" role="tablist" aria-label="Choose a character"></div>
-        <div id="character-panels"></div>
+
+        <div class="tabs character-tabs" role="tablist"
+          aria-label="Choose a character">
+
+          <button class="tab" id="character-revi-tab" role="tab"
+            aria-selected="true" aria-controls="character-revi"
+            data-character="revi">Revi</button>
+
+          <button class="tab" id="character-rion-tab" role="tab"
+            aria-selected="false" aria-controls="character-rion"
+            data-character="rion" tabindex="-1">Rion</button>
+
+          <button class="tab" id="character-khianna-tab" role="tab"
+            aria-selected="false" aria-controls="character-khianna"
+            data-character="khianna" tabindex="-1">Khianna</button>
+
+          <button class="tab" id="character-cathelyn-tab" role="tab"
+            aria-selected="false" aria-controls="character-cathelyn"
+            data-character="cathelyn" tabindex="-1">Cathelyn</button>
+
+          <button class="tab" id="character-shiela-tab" role="tab"
+            aria-selected="false" aria-controls="character-shiela"
+            data-character="shiela" tabindex="-1">Shiela</button>
+
+          <button class="tab" id="character-valerie-tab" role="tab"
+            aria-selected="false" aria-controls="character-valerie"
+            data-character="valerie" tabindex="-1">Valerie</button>
+
+          <button class="tab" id="character-shino-tab" role="tab"
+            aria-selected="false" aria-controls="character-shino"
+            data-character="shino" tabindex="-1">Shino</button>
+        </div>
+
+        <article class="character-profile" id="character-revi"
+          role="tabpanel" aria-labelledby="character-revi-tab">
+
+          <div class="character-art-column">
+            <button class="character-art-button" id="revi-art"
+              type="button" aria-label="Open the full artwork of Revi"
+              aria-haspopup="dialog">
+              <img
+                src="Messenger_creation_77571BAB-9A14-4D84-84AC-A79DFBB6F692.png"
+                alt="Heart’s grayscale portrait of Revi, with layered hair, facial piercings, a studded choker, and a striped shirt."
+                loading="lazy"
+              >
+              <span>View full artwork ↗</span>
+            </button>
+            <p class="small muted character-credit">
+              Original character & artwork by Heart · KHeart67
+            </p>
+          </div>
+
+          <div class="character-info">
+            <p class="eyebrow">Meet my original character</p>
+            <h3>Revi<span aria-hidden="true">✧</span></h3>
+            <div class="chips">
+              <span class="chip">Original character</span>
+              <span class="chip">Lore in development</span>
+            </div>
+            <p class="character-intro">
+              This is Revi, a character I created around June 2024.
+              His story is still unknown for now, but this is where
+              I’ll collect his artwork and the details as they develop.
+            </p>
+
+            <dl class="character-facts">
+              <div><dt>Age</dt><dd>21</dd></div>
+              <div><dt>Height</dt><dd>5′11″</dd></div>
+              <div><dt>Orientation</dt><dd>Bisexual</dd></div>
+              <div><dt>Created</dt><dd>Around June 2024</dd></div>
+            </dl>
+
+            <div class="character-lore">
+              <h4>A story still taking shape.</h4>
+              <p>Lore still unknown for now.</p>
+            </div>
+            <a class="link" href="#works">Find Revi in the collection ↗</a>
+          </div>
+        </article>
+
+        <article class="character-profile" id="character-rion"
+          role="tabpanel" aria-labelledby="character-rion-tab" hidden>
+
+          <div class="character-art-column">
+            <button class="character-art-button"
+              data-character-art="rion" type="button" aria-haspopup="dialog">
+              <img
+                src="Messenger_creation_26ACA17F-2417-438D-820C-335778260A9F.jpeg"
+                alt="Rion, the black-eyed dragon on the left, beside pink-haired Khianna on the right."
+                loading="lazy"
+              >
+              <span>View Rion & Khianna ↗</span>
+            </button>
+            <p class="small muted character-credit">
+              Original characters & artwork by Heart · KHeart67
+            </p>
+          </div>
+
+          <div class="character-info">
+            <p class="eyebrow">From the dragon world above</p>
+            <h3>Rion<span aria-hidden="true">✧</span></h3>
+            <div class="chips">
+              <span class="chip">Dragon</span>
+              <span class="chip">Unfinished lore</span>
+            </div>
+            <p class="character-intro">
+              A dragon who fell into the human world, found a home with
+              Khianna and her father, and lost them in a tragedy he
+              could not understand.
+            </p>
+
+            <dl class="character-facts">
+              <div><dt>Species</dt><dd>Dragon</dd></div>
+              <div><dt>Created</dt><dd>Around May 2026</dd></div>
+              <div><dt>In this artwork</dt><dd>Left · black eyes</dd></div>
+              <div><dt>Story status</dt><dd>Unfinished</dd></div>
+            </dl>
+
+            <div class="character-lore">
+              <h4>A search that isn’t over.</h4>
+              <p>
+                Rion is looking for a way to bring Khianna back,
+                even if she cannot return as a human.
+              </p>
+            </div>
+            <a class="link" href="#works">Find Rion in the collection ↗</a>
+          </div>
+
+          <details class="character-story">
+            <summary>Read Rion’s story · unfinished</summary>
+            <div class="detail-body">
+              <p>
+                Rion is a dragon from the dragon world above. When a war
+                between his family and a neighboring creature reached
+                their home, he fell to the human land while still inside
+                his egg.
+              </p>
+              <p>
+                A human villager found the unusual egg and sold it to
+                merchants. It passed through auctions before a nobleman
+                bought it, and Rion eventually hatched in his possession.
+                His owner ridiculed and abused him, then sold him at
+                another auction as a slave. A higher-ranking nobleman
+                bought him, but Rion escaped on the journey to his
+                new owner’s house.
+              </p>
+              <p>
+                He fled deep into the woods and wandered for days until
+                he collapsed from hunger. There, he met Khianna, a
+                pink-haired human girl. Her kindness and innocence
+                convinced her father to take him in. Rion grew up with
+                Khianna and her father for years, until Khianna turned sixteen.
+              </p>
+              <p>
+                The human kingdom eventually discovered that a civilian
+                was sheltering someone it considered a monster.
+                The king ordered guards and villagers to find them
+                and kill Rion. When they reached the house, the villagers
+                threatened Khianna and her father with weapons and fire.
+              </p>
+              <p>
+                Rion panicked and tried to protect them, but his reaction
+                only intensified the villagers’ anger and hatred. He went
+                on a rampage, breathing fire through the forest. Khianna
+                and her father stepped back in terror as part of their
+                burning house collapsed onto them, killing them both.
+              </p>
+              <p>
+                When Rion saw Khianna burning, he lost control and killed
+                the villagers. He believed they had killed her, unable
+                to recognize that his own fire had caused her death.
+              </p>
+              <p>
+                Afterward, he carried Khianna’s body and searched for a
+                way to revive her, even if she could no longer return
+                as a human.
+              </p>
+              <p>
+                Lore is still unfinished. What happens next has not
+                been decided.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        <article class="character-profile" id="character-khianna"
+          role="tabpanel" aria-labelledby="character-khianna-tab" hidden>
+
+          <div class="character-art-column">
+            <div class="character-art-switch">
+              <p class="label">With Rion · main-story artwork</p>
+              <button class="character-art-button"
+                data-character-art="khianna-main"
+                type="button" aria-haspopup="dialog">
+                <img
+                  src="Messenger_creation_26ACA17F-2417-438D-820C-335778260A9F.jpeg"
+                  alt="Pink-haired Khianna on the right, beside Rion on the left."
+                  loading="lazy"
+                >
+                <span>View Khianna & Rion ↗</span>
+              </button>
+            </div>
+
+            <div class="character-art-switch">
+              <p class="label">Alternate version</p>
+              <button class="character-art-button"
+                data-character-art="khianna-alternate"
+                type="button" aria-haspopup="dialog">
+                <img
+                  src="60439145-5dd5-4157-b361-6e52d21bf31a_1.jpeg"
+                  alt="An alternate drawing of Khianna with long hair, wings, and a scythe."
+                  loading="lazy"
+                >
+                <span>View alternate Khianna ↗</span>
+              </button>
+            </div>
+
+            <p class="small muted character-credit">
+              Original characters & artwork by Heart · KHeart67
+            </p>
+          </div>
+
+          <div class="character-info">
+            <p class="eyebrow">A little kindness changed his world</p>
+            <h3>Khianna<span aria-hidden="true">♡</span></h3>
+            <div class="chips">
+              <span class="chip">Human · main story</span>
+              <span class="chip">Alternate version</span>
+            </div>
+            <p class="character-intro">
+              Khianna is the pink-haired girl beside Rion.
+              Her kindness and innocence convinced her father to take
+              him in, and they grew up together for years.
+            </p>
+
+            <dl class="character-facts">
+              <div><dt>Created</dt><dd>Around April 2026</dd></div>
+              <div><dt>Main-story species</dt><dd>Human</dd></div>
+              <div><dt>Age at the attack</dt><dd>16</dd></div>
+              <div><dt>Story status</dt><dd>Unfinished</dd></div>
+            </dl>
+
+            <div class="character-lore">
+              <h4>Two versions, one character.</h4>
+              <p>
+                The winged, scythe-bearing drawing is another version
+                of Khianna. Its place in the story is still to be established.
+              </p>
+            </div>
+            <a class="link" href="#works">Find Khianna in the collection ↗</a>
+          </div>
+
+          <details class="character-story">
+            <summary>Khianna’s place in the story</summary>
+            <div class="detail-body">
+              <p>
+                Khianna and her father gave Rion a home after he escaped
+                captivity and collapsed from hunger in the woods.
+                They lived together for years, until Khianna turned sixteen.
+              </p>
+              <p>
+                When the kingdom discovered that they were sheltering
+                Rion, villagers and guards came for him. During the
+                confrontation, Rion’s fire spread, and part of the burning
+                house collapsed onto Khianna and her father, killing them.
+              </p>
+              <p>
+                Rion believed the villagers had killed Khianna, although
+                his own fire had caused her death. He later carried her
+                body in search of a way to revive her. The story remains
+                unfinished.
+              </p>
+              <p>
+                The alternate artwork is a separate version of Khianna;
+                what it means for this unfinished story has not been decided.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        <article class="character-profile" id="character-cathelyn"
+          role="tabpanel" aria-labelledby="character-cathelyn-tab" hidden>
+
+          <div class="character-art-column">
+            <button class="character-art-button"
+              data-character-art="cathelyn" type="button"
+              aria-haspopup="dialog">
+              <img
+                src="768931543_4664261500471553_1508486642586904714_n.png"
+                alt="Cathelyn’s pink character sheet, showing two portraits and her character information."
+                loading="lazy"
+              >
+              <span>View Cathelyn’s character sheet ↗</span>
+            </button>
+            <p class="small muted character-credit">
+              Original character & artwork by Heart · KHeart67
+            </p>
+          </div>
+
+          <div class="character-info">
+            <p class="eyebrow">A character with her own little world</p>
+            <h3>Cathelyn<span aria-hidden="true">♡</span></h3>
+            <div class="chips">
+              <span class="chip">Original character</span>
+              <span class="chip">Separate story</span>
+            </div>
+            <p class="character-intro">
+              A character I created around June 2026, separate from
+              Rion and Khianna’s story. Cathelyn is naturally charming
+              and playful, with an affectionate side she shares with
+              people she trusts.
+            </p>
+
+            <dl class="character-facts">
+              <div><dt>Age</dt><dd>19</dd></div>
+              <div><dt>Height</dt><dd>5′4″ · 163 cm</dd></div>
+              <div><dt>Birthday</dt><dd>May 18</dd></div>
+              <div><dt>Created</dt><dd>Around June 2026</dd></div>
+            </dl>
+
+            <div class="character-lore">
+              <h4>Sweet beneath the teasing.</h4>
+              <p>
+                Confident without being overly serious, she enjoys
+                playful teasing and has a playful sense of humor.
+              </p>
+            </div>
+            <a class="link" href="#works">Find Cathelyn in the collection ↗</a>
+          </div>
+
+          <details class="character-story">
+            <summary>Personality, likes & dislikes</summary>
+            <div class="detail-body two-col">
+              <div>
+                <h4>What she’s like</h4>
+                <ul>
+                  <li>Loves playful teasing and is naturally charming.</li>
+                  <li>Confident, with a playful sense of humor.</li>
+                  <li>Notices when someone gets shy around her.</li>
+                  <li>Affectionate toward people she trusts.</li>
+                  <li>Surprisingly sweet when she drops the teasing.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Likes</h4>
+                <p>Music, compliments, playful arguments, and flirting.</p>
+                <h4>Dislikes</h4>
+                <p>
+                  Being ignored, boring conversations, overly serious
+                  people, and losing challenges.
+                </p>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="character-profile" id="character-shiela"
+          role="tabpanel" aria-labelledby="character-shiela-tab" hidden>
+
+          <div class="character-art-column">
+            <button class="character-art-button"
+              data-character-art="shiela" type="button"
+              aria-haspopup="dialog">
+              <img
+                src="IMG_20261110_200017_edit_417133338135578.jpg"
+                alt="A traditional character sheet of Shiela with curly brown hair, a large portrait and a standing figure."
+                loading="lazy"
+              >
+              <span>View full artwork ↗</span>
+            </button>
+            <p class="small muted character-credit">
+              Original character & artwork by Heart · KHeart67
+            </p>
+          </div>
+
+          <div class="character-info">
+            <p class="eyebrow">Meet my original character</p>
+            <h3>Shiela<span aria-hidden="true">✧</span></h3>
+            <div class="chips"><span class="chip">Original character</span></div>
+            <p class="character-intro">
+              My original character Shiela, created around July 2025.
+            </p>
+            <dl class="character-facts">
+              <div><dt>Age</dt><dd>24</dd></div>
+              <div><dt>Created</dt><dd>Around July 2025</dd></div>
+            </dl>
+            <div class="character-lore">
+              <h4>More to discover.</h4>
+              <p>More character details can be added as I develop them.</p>
+            </div>
+            <a class="link" href="#works">Find Shiela in the collection ↗</a>
+          </div>
+        </article>
+
+        <article class="character-profile" id="character-valerie"
+          role="tabpanel" aria-labelledby="character-valerie-tab" hidden>
+
+          <div class="character-art-column">
+            <button class="character-art-button"
+              data-character-art="valerie" type="button"
+              aria-haspopup="dialog">
+              <img
+                src="IMG_20261110_200223_edit_417201494234797.jpg"
+                alt="A colored drawing of Valerie with blue hair in a bun, hoop earrings and a pink top."
+                loading="lazy"
+              >
+              <span>View full artwork ↗</span>
+            </button>
+            <p class="small muted character-credit">
+              Original character & artwork by Heart · KHeart67
+            </p>
+          </div>
+
+          <div class="character-info">
+            <p class="eyebrow">Meet my original character</p>
+            <h3>Valerie<span aria-hidden="true">✧</span></h3>
+            <div class="chips">
+              <span class="chip">Original character</span>
+              <span class="chip">Story not written yet</span>
+            </div>
+            <p class="character-intro">
+              Valerie is an original character I created around
+              February 2, 2026. She is 19.
+            </p>
+            <dl class="character-facts">
+              <div><dt>Age</dt><dd>19</dd></div>
+              <div><dt>Created</dt><dd>Around February 2, 2026</dd></div>
+              <div><dt>Story status</dt><dd>No lore or story yet</dd></div>
+            </dl>
+            <div class="character-lore">
+              <h4>A story still waiting to begin.</h4>
+              <p>Valerie has no lore or story yet.</p>
+            </div>
+            <a class="link" href="#works">Find Valerie in the collection ↗</a>
+          </div>
+        </article>
+
+        <article class="character-profile" id="character-shino"
+          role="tabpanel" aria-labelledby="character-shino-tab" hidden>
+
+          <div class="character-art-column">
+            <button class="character-art-button"
+              data-character-art="shino" type="button"
+              aria-haspopup="dialog">
+              <img
+                src="IMG_20261110_200407_edit_417308566224328.jpg"
+                alt="A pencil drawing of Shino with clown-inspired makeup, a dark jacket and stars around the figure."
+                loading="lazy"
+              >
+              <span>View full artwork ↗</span>
+            </button>
+            <p class="small muted character-credit">
+              Original character & artwork by Heart · KHeart67
+            </p>
+          </div>
+
+          <div class="character-info">
+            <p class="eyebrow">Meet my original character</p>
+            <h3>Shino<span aria-hidden="true">✧</span></h3>
+            <div class="chips">
+              <span class="chip">Original character</span>
+              <span class="chip">Unfinished lore</span>
+            </div>
+            <p class="character-intro">
+              Shino is fascinated by clowns and pranks. Shino has a
+              mental disability and can think clearly. Their age is
+              unknown, and the lore and story are still unfinished.
+            </p>
+            <dl class="character-facts">
+              <div><dt>Age</dt><dd>Unknown</dd></div>
+              <div><dt>Interests</dt><dd>Clowns & pranks</dd></div>
+              <div><dt>Story status</dt><dd>Unfinished</dd></div>
+            </dl>
+            <div class="character-lore">
+              <h4>A character still taking shape.</h4>
+              <p>Shino’s lore and story are still unfinished.</p>
+            </div>
+            <a class="link" href="#works">Find Shino in the collection ↗</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- VISITOR LOUNGE -->
-    <section class="page" id="lounge" tabindex="-1" aria-labelledby="lounge-heading" hidden>
+    <!-- VISITOR'S LOUNGE -->
+
+    <section class="page" id="lounge" tabindex="-1"
+      aria-labelledby="lounge-heading" hidden>
+
       <div class="page-header">
-        <p class="eyebrow">Stay a little. Make something.</p>
+        <p class="eyebrow">
+          Stay a little, say something... anything at all....heh.
+        </p>
         <h2 id="lounge-heading">The visitor’s <em>lounge.</em></h2>
         <p>A tiny corner to doodle, unwind, or leave a little hello.</p>
       </div>
 
       <div class="panel section-pad">
         <div class="tabs" role="tablist" aria-label="Visitor activities">
-          <button class="tab" id="lounge-draw-tab" role="tab" aria-selected="true" aria-controls="lounge-draw" data-lounge="draw">Drawing board</button>
-          <button class="tab" id="lounge-note-tab" role="tab" aria-selected="false" aria-controls="lounge-note" data-lounge="note" tabindex="-1">Leave a note</button>
+          <button class="tab" id="lounge-draw-tab" role="tab"
+            aria-selected="true" aria-controls="lounge-draw"
+            data-lounge="draw">
+            Drawing board
+          </button>
+          <button class="tab" id="lounge-note-tab" role="tab"
+            aria-selected="false" aria-controls="lounge-note"
+            data-lounge="note" tabindex="-1">
+            Leave a note
+          </button>
         </div>
 
-        <div id="lounge-draw" role="tabpanel" aria-labelledby="lounge-draw-tab">
+        <div id="lounge-draw" role="tabpanel"
+          aria-labelledby="lounge-draw-tab">
+
           <div class="drawing-layout">
             <div class="toolbox">
               <label for="brush-color">
                 Your color
                 <input id="brush-color" type="color" value="#a446b8">
               </label>
+
               <label for="brush-tool">
                 Your tool
                 <select id="brush-tool">
@@ -1384,66 +2613,85 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
                   <option value="eraser">Eraser</option>
                 </select>
               </label>
+
               <label for="brush-size">
                 Brush size · <span id="size-value">6</span>px
-                <input id="brush-size" type="range" min="1" max="45" value="6">
+                <input id="brush-size" type="range"
+                  min="1" max="45" value="6">
               </label>
+
               <div class="tool-pair">
-                <button class="btn outline" id="draw-undo" type="button">Undo</button>
-                <button class="btn outline" id="draw-clear" type="button">Clear</button>
+                <button class="btn outline" id="draw-undo">Undo</button>
+                <button class="btn outline" id="draw-clear">Clear</button>
               </div>
+
               <div class="draw-actions">
-                <button class="btn" id="draw-save" type="button">Save doodle ↓</button>
+                <button class="btn" id="draw-save">Save doodle ↓</button>
               </div>
             </div>
 
             <div class="canvas-wrap">
-              <canvas
-                class="canvas"
-                id="drawing"
-                width="900"
-                height="720"
-                aria-label="Drawing board. Draw with a mouse, finger, or stylus."
-              >Your browser does not support the drawing board.</canvas>
+              <canvas class="canvas" id="drawing"
+                width="900" height="720"
+                aria-label="Drawing board. Draw with a mouse, finger, or stylus.">
+                Your browser does not support the drawing board.
+              </canvas>
+
               <p class="canvas-hint">
                 Draw with your mouse or finger. Save your doodle as a PNG.
                 To share it with me, attach the saved image to an email.
               </p>
-              <a class="link" href="mailto:kheartxs1@gmail.com?subject=A%20little%20doodle%20for%20Heart">
+
+              <a class="link"
+                href="mailto:kheartxs1@gmail.com?subject=A%20little%20doodle%20for%20Heart">
                 Share a doodle by email ↗
               </a>
+
               <p class="status" id="draw-status" role="status"></p>
             </div>
           </div>
         </div>
 
-        <div id="lounge-note" role="tabpanel" aria-labelledby="lounge-note-tab" hidden>
-          <h3>A little hello goes a long way.</h3>
-          <p class="small muted">Your note goes to my inbox, rather than a public message board.</p>
+        <div id="lounge-note" role="tabpanel"
+          aria-labelledby="lounge-note-tab" hidden>
 
-          <form class="email-form" action="https://formsubmit.co/kheartxs1@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="A visitor note — Heart's Portfolio">
+          <h3>A little hello goes a long way.</h3>
+          <p class="small muted">
+            Your note goes to my inbox, rather than a public message board.
+          </p>
+
+          <form class="email-form"
+            action="https://formsubmit.co/kheartxs1@gmail.com"
+            method="POST">
+
+            <input type="hidden" name="_subject"
+              value="A visitor note — Heart's Portfolio">
             <input type="hidden" name="_template" value="table">
-            <input name="_honey" type="text" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="_honey" type="text" style="display:none"
+              tabindex="-1" autocomplete="off" aria-hidden="true">
 
             <div class="form-grid">
               <label class="field">
                 Your name *
-                <input name="name" required maxlength="100" autocomplete="name">
+                <input name="name" required maxlength="100"
+                  autocomplete="name">
               </label>
               <label class="field">
                 Your email *
-                <input type="email" name="email" required maxlength="254" autocomplete="email">
+                <input type="email" name="email" required maxlength="254"
+                  autocomplete="email">
               </label>
             </div>
 
             <label class="field">
               Your little note *
-              <textarea name="message" required maxlength="3000" placeholder="A kind thought, an art idea, or just a hello…"></textarea>
+              <textarea name="message" required maxlength="3000"
+                placeholder="A kind thought, an art idea, or just a hello…"></textarea>
             </label>
 
             <p class="form-note">
-              Sent through FormSubmit. Include only details you’re happy to share with me.
+              Sent through FormSubmit. Include only details you’re happy
+              to share with me.
             </p>
             <button class="btn" type="submit">Send a little hello ♡</button>
           </form>
@@ -1452,13 +2700,18 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
     </section>
 
     <!-- COMMISSIONS -->
-    <section class="page" id="commissions" tabindex="-1" aria-labelledby="commissions-heading" hidden>
+
+    <section class="page" id="commissions" tabindex="-1"
+      aria-labelledby="commissions-heading" hidden>
+
       <div class="page-header">
         <p class="eyebrow">Let’s make something that feels like you</p>
-        <h2 id="commissions-heading">Your idea.<br><em>A little magic.</em></h2>
+        <h2 id="commissions-heading">
+          Your idea.<br><em>A little magic.</em>
+        </h2>
         <p>
-          Have a portrait, a character, or a wonderfully strange idea in mind?
-          Tell me about it, and we can discuss the possibilities.
+          Have a portrait, a character, or a wonderfully strange idea
+          in mind? Tell me about it, and we can discuss the possibilities.
         </p>
       </div>
 
@@ -1466,20 +2719,38 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
         <article class="card">
           <div class="card-icon" aria-hidden="true">♡</div>
           <h3>Portraits</h3>
-          <p>A face, an expression, a little personality. Share your references and the mood you’re imagining.</p>
-          <a class="link pick-type" href="#commission-form" data-type="Portrait">Plan a portrait ↗</a>
+          <p>
+            A face, an expression, a little personality. Share your
+            references and the mood you’re imagining.
+          </p>
+          <a class="link pick-type" href="#commission-form"
+            data-type="Portrait">Plan a portrait ↗</a>
         </article>
+
         <article class="card">
           <div class="card-icon" aria-hidden="true">✧</div>
-          <h3>Art &amp; characters</h3>
-          <p>Original characters and illustrated ideas with room for color, emotion, and a story of their own.</p>
-          <a class="link pick-type" href="#commission-form" data-type="Artwork / character illustration">Imagine an artwork ↗</a>
+          <h3>Art & characters</h3>
+          <p>
+            Original characters and illustrated ideas with room for color,
+            emotion, and a story of their own.
+          </p>
+          <a class="link pick-type" href="#commission-form"
+            data-type="Artwork / character illustration">
+            Imagine an artwork ↗
+          </a>
         </article>
+
         <article class="card">
           <div class="card-icon" aria-hidden="true">☾</div>
-          <h3>Motion &amp; design</h3>
-          <p>Have an animation concept or custom graphic in mind? Let’s discuss the scope and what’s possible.</p>
-          <a class="link pick-type" href="#commission-form" data-type="Animation / motion concept">Discuss an idea ↗</a>
+          <h3>Motion & design</h3>
+          <p>
+            Have an animation concept or custom graphic in mind?
+            Let’s discuss the scope and what’s possible.
+          </p>
+          <a class="link pick-type" href="#commission-form"
+            data-type="Animation / motion concept">
+            Discuss an idea ↗
+          </a>
         </article>
       </div>
 
@@ -1500,20 +2771,29 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
           </div>
         </div>
 
-        <form class="form-card email-form" id="commission-form" action="https://formsubmit.co/kheartxs1@gmail.com" method="POST">
+        <form class="form-card email-form" id="commission-form"
+          action="https://formsubmit.co/kheartxs1@gmail.com"
+          method="POST">
+
           <p class="eyebrow">Send a commission inquiry</p>
-          <input name="_subject" type="hidden" value="New commission inquiry — Heart's Portfolio">
-          <input name="_template" type="hidden" value="table">
-          <input name="_honey" type="text" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <input name="_subject" type="hidden"
+            value="New commission inquiry — Heart's Portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input name="_honey" type="text" style="display:none"
+            tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="form-grid">
             <label class="field">
               Your name *
-              <input name="name" required maxlength="100" autocomplete="name" placeholder="What should I call you?">
+              <input name="name" required maxlength="100"
+                autocomplete="name" placeholder="What should I call you?">
             </label>
+
             <label class="field">
               Your email *
-              <input name="email" type="email" required maxlength="254" autocomplete="email" placeholder="Where can I reply?">
+              <input name="email" type="email" required maxlength="254"
+                autocomplete="email" placeholder="Where can I reply?">
             </label>
           </div>
 
@@ -1531,13 +2811,15 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
 
           <label class="field">
             Tell me your idea *
-            <textarea name="message" required maxlength="4000" placeholder="Subject, colors, mood, reference links… what are you imagining?"></textarea>
+            <textarea name="message" required maxlength="4000"
+              placeholder="Subject, colors, mood, reference links… what are you imagining?"></textarea>
           </label>
 
           <div class="form-grid">
             <label class="field">
-              Budget &amp; currency (optional)
-              <input name="Budget" maxlength="150" placeholder="Your budget or open to a quote">
+              Budget & currency (optional)
+              <input name="Budget" maxlength="150"
+                placeholder="Your budget or open to a quote">
             </label>
             <label class="field">
               Preferred deadline (optional)
@@ -1557,24 +2839,32 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
 
           <p class="form-note">
             Your inquiry is sent to Heart through FormSubmit.
-            Sending an inquiry does not confirm a booking.
-            Please include only details needed for your project.
+            Sending an inquiry does not confirm a booking. Please include
+            only details needed for your project.
           </p>
+
           <button class="btn" type="submit">Send my inquiry ♡</button>
         </form>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="page" id="contact" tabindex="-1" aria-labelledby="contact-heading" hidden>
+
+    <section class="page" id="contact" tabindex="-1"
+      aria-labelledby="contact-heading" hidden>
+
       <div class="page-header">
         <p class="eyebrow">Good ideas start with a little hello</p>
         <h2 id="contact-heading">Let’s get <em>in touch.</em></h2>
-        <p>For creative conversations, collaborations, and ideas you’d like to bring to life.</p>
+        <p>
+          For creative conversations, collaborations, and ideas
+          you’d like to bring to life.
+        </p>
       </div>
+
       <div class="panel contact-card">
         <h3>Leave a little magic.</h3>
-        <p class="small muted">
+        <p class="muted small">
           Send a commission inquiry or say hello by email.
           I’d love to hear what you’re imagining.
         </p>
@@ -1589,10 +2879,22 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
 
         <div class="contact-line">
           <div>
-            <small>GitHub</small>
-            <a href="https://github.com/KHeart67" target="_blank" rel="noopener noreferrer">@KHeart67</a>
+            <small>Instagram</small>
+            <a href="https://www.instagram.com/kheartxs1/"
+              target="_blank" rel="noopener noreferrer">@kheartxs1</a>
           </div>
-          <a class="link" href="https://github.com/KHeart67" target="_blank" rel="noopener noreferrer">Visit profile ↗</a>
+          <a class="link" href="https://www.instagram.com/kheartxs1/"
+            target="_blank" rel="noopener noreferrer">Visit Instagram ↗</a>
+        </div>
+
+        <div class="contact-line">
+          <div>
+            <small>GitHub</small>
+            <a href="https://github.com/KHeart67"
+              target="_blank" rel="noopener noreferrer">@KHeart67</a>
+          </div>
+          <a class="link" href="https://github.com/KHeart67"
+            target="_blank" rel="noopener noreferrer">Visit profile ↗</a>
         </div>
 
         <div class="contact-line">
@@ -1607,99 +2909,36 @@ dialog img{width:100%;display:block;border-radius:10px;margin:16px 0}
 
     <footer class="footer">
       <span>© <span id="year"></span> Heart · KHeart67</span>
-      <span>Made of dreams, music &amp; a little moonlight. ✧</span>
+      <span>please bare with this artist, she's really good.. TwT</span>
     </footer>
+
   </main>
 </div>
 
 <dialog id="detail-dialog" aria-labelledby="dialog-title">
-  <button class="round dialog-close" type="button" aria-label="Close details">×</button>
+  <button class="round dialog-close" aria-label="Close details">×</button>
   <p class="eyebrow" id="dialog-label"></p>
   <h2 id="dialog-title"></h2>
-  <div id="dialog-body"></div>
+  <div class="modal-body" id="dialog-body"></div>
 </dialog>
 
 <script>
-"use strict";
+'use strict';
 
 const $ = id => document.getElementById(id);
 
-/* Image filenames: keep these images beside index.html. */
-const images = {
-  cover: "b339ace8920db8ba5b918e496af29486.jpg",
-  profile: "ce0fa005d2f5443e93695c64347b7df8.jpg",
-  revi: "Messenger_creation_77571BAB-9A14-4D84-84AC-A79DFBB6F692.png",
-  rion: "Messenger_creation_26ACA17F-2417-438D-820C-335778260A9F.jpeg",
-  khianna: "60439145-5dd5-4157-b361-6e52d21bf31a_1.jpeg",
-  cathelyn: "768931543_4664261500471553_1508486642586904714_n.png",
-  schedule: "Messenger_creation_E36301E9-676C-4838-85C2-C35C909B7880.jpeg"
-};
+/*
+  These are the original uploaded image filenames.
+  All images belong in the SAME folder as index.html.
+*/
 
-document.querySelectorAll("[data-image]").forEach(img => {
-  img.src = images[img.dataset.image];
-});
-
-/* Animated name, with decorative stars hidden from screen readers. */
-const starSVG = `
-  <svg class="letter-star" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.8 6.8-1Z"/>
-  </svg>
-`;
-
-"Heart".split("").forEach((letter, i) => {
-  const span = document.createElement("span");
-  span.className = "name-letter";
-  span.style.setProperty("--letter", i);
-  span.setAttribute("aria-hidden", "true");
-  span.textContent = letter;
-  span.insertAdjacentHTML("beforeend", starSVG);
-  $("heart-name").append(span);
-});
-
-/* Shared dialog. Dynamic text is inserted as text, not executable HTML. */
-function openDialog(label, title, paragraphs, imageSrc) {
-  $("dialog-label").textContent = label;
-  $("dialog-title").textContent = title;
-  const body = $("dialog-body");
-  body.replaceChildren();
-
-  if (imageSrc) {
-    const img = document.createElement("img");
-    img.src = imageSrc;
-    img.alt = title;
-    body.append(img);
-  }
-
-  paragraphs.forEach(text => {
-    const p = document.createElement("p");
-    p.textContent = text;
-    body.append(p);
-  });
-
-  if (!$("detail-dialog").open) $("detail-dialog").showModal();
-}
-
-$("detail-dialog").querySelector(".dialog-close").addEventListener("click", () => {
-  $("detail-dialog").close();
-});
-
-$("detail-dialog").addEventListener("click", event => {
-  const dialog = $("detail-dialog");
-  const r = dialog.getBoundingClientRect();
-  if (
-    event.target === dialog &&
-    (event.clientX < r.left || event.clientX > r.right ||
-     event.clientY < r.top || event.clientY > r.bottom)
-  ) dialog.close();
-});
-
-/* Artworks. Add future pieces to this array. */
 const portfolioItems = [
   {
     title: "Revi",
     type: "art",
+    category: "characters",
     categories: ["characters", "portraits"],
-    src: images.revi,
+    src: "Messenger_creation_77571BAB-9A14-4D84-84AC-A79DFBB6F692.png",
     description:
       "My original character Revi. I created him around June 2024. " +
       "He is 21, 5′11″ tall, and bisexual. His lore is still unknown for now."
@@ -1707,1083 +2946,288 @@ const portfolioItems = [
   {
     title: "Rion & Khianna",
     type: "art",
+    category: "characters",
     categories: ["characters", "portraits", "sketches"],
-    src: images.rion,
+    src: "Messenger_creation_26ACA17F-2417-438D-820C-335778260A9F.jpeg",
     description:
       "A traditional drawing of my original characters Rion and Khianna. " +
-      "Rion is the dragon with black eyes on the left; Khianna is the pink-haired girl on the right. " +
-      "Rion was created around May 2026, and Khianna around April 2026. Their story is still unfinished."
+      "Rion is the dragon with black eyes on the left; Khianna is the " +
+      "pink-haired girl on the right. Rion was created around May 2026, " +
+      "and Khianna around April 2026. Their story is still unfinished."
   },
   {
     title: "Khianna — Alternate Version",
     type: "art",
+    category: "characters",
     categories: ["characters", "illustrations", "sketches"],
-    src: images.khianna,
+    src: "60439145-5dd5-4157-b361-6e52d21bf31a_1.jpeg",
     description:
-      "An alternate version of Khianna, my original character created around April 2026. " +
-      "This traditional drawing explores her with wings and a scythe. " +
-      "Her connection to the main story in this version has not been established."
+      "An alternate version of Khianna, my original character created " +
+      "around April 2026. This traditional drawing explores her with " +
+      "wings and a scythe. Her connection to the main story in this " +
+      "version has not been established."
   },
   {
     title: "Cathelyn — Character Sheet",
     type: "art",
+    category: "characters",
     categories: ["characters", "portraits", "illustrations"],
-    src: images.cathelyn,
+    src: "768931543_4664261500471553_1508486642586904714_n.png",
     description:
-      "Cathelyn is a separate original character I created around June 2026, " +
-      "unrelated to Rion and Khianna’s story. Her character sheet lists her as 19, " +
-      "5′4″ (163 cm), with a birthday on May 18. " +
-      "She is playful, naturally charming, and affectionate toward people she trusts."
+      "Cathelyn is a separate original character I created around June " +
+      "2026, unrelated to Rion and Khianna’s story. Her character sheet " +
+      "lists her as 19, 5′4″ (163 cm), with a birthday on May 18. She is " +
+      "playful, naturally charming, and affectionate toward people she trusts."
+  },
+  {
+    title: "Shiela",
+    type: "art",
+    category: "characters",
+    categories: ["characters", "portraits", "illustrations"],
+    src: "IMG_20261110_200017_edit_417133338135578.jpg",
+    description:
+      "My original character Shiela, age 24. I created her around July 2025.",
+    alt:
+      "A traditional character sheet of Shiela with curly brown hair, " +
+      "a large portrait and a standing figure.",
+    dateLabel: "Around July 2025"
+  },
+  {
+    title: "Untitled Portrait",
+    type: "art",
+    category: "portraits",
+    categories: ["portraits", "sketches"],
+    src: "IMG_20261110_200052_edit_417156193354328.jpg",
+    description:
+      "A random drawing from my sketchbook, made on December 15, 2025.",
+    alt: "A pencil portrait with large eyes, full lips and long wavy hair.",
+    dateLabel: "December 15, 2025"
+  },
+  {
+    title: "Untitled Sketch — February 2026",
+    type: "art",
+    category: "portraits",
+    categories: ["portraits", "sketches"],
+    src: "IMG_20261110_200131_edit_417176755978234.jpg",
+    description: "A random drawing I made around February 11, 2026.",
+    alt:
+      "A pencil character sketch with layered hair, a lettered shirt " +
+      "and a small expression doodle.",
+    dateLabel: "Around February 11, 2026"
+  },
+  {
+    title: "Valerie",
+    type: "art",
+    category: "characters",
+    categories: ["characters", "portraits", "illustrations"],
+    src: "IMG_20261110_200223_edit_417201494234797.jpg",
+    description:
+      "My original character Valerie, age 19. I created her around " +
+      "February 2, 2026. She has no lore or story yet.",
+    alt:
+      "A colored drawing of Valerie with blue hair in a bun, " +
+      "hoop earrings and a pink top.",
+    dateLabel: "Around February 2, 2026"
+  },
+  {
+    title: "Iruma — Fan Art",
+    type: "art",
+    category: "fanart",
+    categories: ["fanart", "illustrations", "sketches"],
+    src: "IMG_20261110_200237_edit_417221289957766.jpg",
+    description:
+      "My fan art of Iruma from Welcome to Demon School! Iruma-kun.",
+    alt:
+      "A pencil drawing of Iruma with horns, long hair and a jacket, " +
+      "alongside handwritten notes."
+  },
+  {
+    title: "Fran — Fan Art",
+    type: "art",
+    category: "fanart",
+    categories: ["fanart", "illustrations", "sketches"],
+    src: "IMG_20261110_200315_edit_417243498961516.jpg",
+    description:
+      "My fan art of Fran from Reincarnated as a Sword, requested " +
+      "by a friend. Made on June 30, 2024.",
+    alt:
+      "A sketchbook page of Fran with cat ears, a standing pose " +
+      "and two expression studies.",
+    dateLabel: "June 30, 2024"
+  },
+  {
+    title: "Untitled Guitarist",
+    type: "art",
+    category: "portraits",
+    categories: ["portraits", "sketches"],
+    src: "IMG_20261110_200331_edit_417259671375266.jpg",
+    description: "A random drawing from my sketchbook.",
+    alt:
+      "A pencil drawing of a layered-haired character wearing necklaces " +
+      "with a guitar strap across the torso."
+  },
+  {
+    title: "Nexiepuffz",
+    type: "art",
+    category: "portraits",
+    categories: ["portraits", "illustrations"],
+    src: "IMG_20261110_200344_edit_417283200187141.jpg",
+    description:
+      "A drawing of Nexiepuffz, a Gacha Life creator. Made on July 14, 2024.",
+    alt:
+      "A colored portrait with turquoise hair, star accessories, " +
+      "a green top and a raised peace sign.",
+    dateLabel: "July 14, 2024"
+  },
+  {
+    title: "Shino",
+    type: "art",
+    category: "characters",
+    categories: ["characters", "portraits", "sketches"],
+    src: "IMG_20261110_200407_edit_417308566224328.jpg",
+    description:
+      "My original character Shino. Age unknown. Shino is fascinated " +
+      "by clowns and pranks, has a mental disability, and can think " +
+      "clearly. The lore and story are still unfinished.",
+    alt:
+      "A pencil drawing of Shino with clown-inspired makeup, " +
+      "a dark jacket and stars around the figure."
+  },
+  {
+    title: "Francis Moses — Fan Art",
+    type: "art",
+    category: "fanart",
+    categories: ["fanart", "portraits", "sketches"],
+    src: "IMG_20261110_200529_edit_417489799556047.jpg",
+    description:
+      "My fan art of Francis Moses from That’s Not My Neighbor. " +
+      "Made on April 1, 2024.",
+    alt:
+      "A pencil sketchbook page of Francis Moses in a milkman cap " +
+      "and bow tie, with a second smaller portrait.",
+    dateLabel: "April 1, 2024"
+  },
+  {
+    title: "Klee — Fan Art",
+    type: "art",
+    category: "fanart",
+    categories: ["fanart", "illustrations", "sketches"],
+    src: "IMG_20261110_200543_edit_417502940926828.jpg",
+    description:
+      "My fan art of Klee from Genshin Impact. Made on April 1, 2024.",
+    alt:
+      "A pencil drawing of Klee in her clover-decorated hat " +
+      "beside a round companion.",
+    dateLabel: "April 1, 2024"
+  },
+  {
+    title: "Sasuke — Fan Art",
+    type: "art",
+    category: "fanart",
+    categories: ["fanart", "illustrations", "sketches"],
+    src: "IMG_20261110_200555_edit_417520894279016.jpg",
+    description:
+      "My drawing of Sasuke from Naruto, requested by a friend. Made in 2023.",
+    alt:
+      "A sketchbook page showing several pencil studies of Sasuke " +
+      "with spiky hair and a forehead protector.",
+    dateLabel: "2023"
+  },
+  {
+    title: "Coffee Painting — Winged Figure",
+    type: "art",
+    category: "paintings",
+    categories: ["paintings", "illustrations"],
+    src: "IMG_20261110_200614_edit_417531479403391.jpg",
+    description:
+      "A coffee painting I made for a school assignment in August 2025.",
+    alt:
+      "A brown-toned coffee painting of a long-haired winged figure " +
+      "lifting a halo above their head.",
+    dateLabel: "August 2025"
+  },
+  {
+    title: "Coffee Painting — Landscape",
+    type: "art",
+    category: "paintings",
+    categories: ["paintings", "illustrations"],
+    src: "IMG_20261110_200625_edit_417549779045734.jpg",
+    description:
+      "A coffee painting I made for a school assignment in August 2025.",
+    alt:
+      "A coffee-painted landscape with mountains, reflected trees, " +
+      "water and a large tree on the right bank.",
+    dateLabel: "August 2025"
+  },
+  {
+    title: "Untitled Digital Portrait — August 2026",
+    type: "art",
+    category: "portraits",
+    categories: ["portraits", "illustrations"],
+    src: "Untitled 2_202611102238_22317.png",
+    description: "A digital portrait I made on August 25, 2026.",
+    alt:
+      "A textured digital portrait with dark eyes, brown hair, a dark " +
+      "shirt and a golden glow against a black background.",
+    dateLabel: "August 25, 2026"
+  },
+  {
+    title: "Untitled Pencil Portrait — September 2026",
+    type: "art",
+    category: "portraits",
+    categories: ["portraits", "sketches"],
+    src: "IMG_20261110_223835_267(2).jpg",
+    description: "A pencil portrait I made on September 8, 2026.",
+    alt:
+      "A sketchbook pencil portrait with long straight hair, bangs, " +
+      "large eyes and lip piercings.",
+    dateLabel: "September 8, 2026"
+  },
+  {
+    title: "Untitled Pink-haired Portrait",
+    type: "art",
+    category: "portraits",
+    categories: ["portraits", "illustrations"],
+    src: "IMG_20261110_230023_edit_421400066424797.jpg",
+    description: "A traditional portrait I made on March 15, 2025.",
+    alt:
+      "A colored portrait with bright pink hair, black and white streaks, " +
+      "facial piercings, a skull hair clip and layered necklaces.",
+    dateLabel: "March 15, 2025"
   }
 ];
 
 /*
-Future examples:
-
-portfolioItems.push({
-  title: "My new artwork",
-  type: "art",
-  categories: ["portraits"],
-  src: "my-new-artwork.jpg",
-  description: "A description of my work."
-});
-
-For a video, use type: "motion" and an MP4 file.
-For a 3D image, use type: "three".
+  A few images were uploaded more than once with (1) or (2) appended.
+  These fallbacks use those original upload names as well.
 */
 
-function makeArtCard(item) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "art-card";
-  button.setAttribute("aria-haspopup", "dialog");
-
-  const image = document.createElement("img");
-  image.src = item.src;
-  image.alt = item.title;
-  image.loading = "lazy";
-
-  const label = document.createElement("span");
-  label.textContent = item.title + " ↗";
-
-  button.append(image, label);
-  button.addEventListener("click", () => {
-    openDialog("From the collection", item.title, [item.description || ""], item.src);
-  });
-  return button;
-}
-
-let artFilter = "all";
-
-function renderArt() {
-  const matches = portfolioItems.filter(item =>
-    item.type === "art" &&
-    (artFilter === "all" || (item.categories || []).includes(artFilter))
-  );
-
-  $("art-gallery").replaceChildren();
-  $("art-count").textContent =
-    matches.length + (matches.length === 1 ? " piece" : " pieces");
-  $("art-empty").hidden = matches.length > 0;
-  matches.forEach(item => $("art-gallery").append(makeArtCard(item)));
-}
-
-document.querySelectorAll("[data-filter]").forEach(button => {
-  button.addEventListener("click", () => {
-    artFilter = button.dataset.filter;
-    document.querySelectorAll("[data-filter]").forEach(other => {
-      other.setAttribute("aria-pressed", String(other === button));
-    });
-    renderArt();
-  });
-});
-
-renderArt();
-
-for (const type of ["motion", "three"]) {
-  const items = portfolioItems.filter(item => item.type === type);
-  $(type + "-empty").hidden = items.length > 0;
-
-  items.forEach(item => {
-    if (type === "three") {
-      $(type + "-gallery").append(makeArtCard(item));
-      return;
-    }
-
-    const card = document.createElement("article");
-    card.className = "video-card";
-
-    const video = document.createElement("video");
-    video.src = item.src;
-    video.controls = true;
-    video.preload = "metadata";
-
-    const title = document.createElement("h3");
-    title.textContent = item.title;
-
-    const description = document.createElement("p");
-    description.textContent = item.description || "";
-
-    card.append(video, title, description);
-    $(type + "-gallery").append(card);
-  });
-}
-
-/* Original character archive. */
-const rionStory = [
-  "Rion is a dragon from the dragon world above. When a war between his family and a neighboring creature reached their home, he fell to the human land while still inside his egg.",
-  "A human villager found the unusual egg and sold it to merchants. It passed through auctions before a nobleman bought it, and Rion eventually hatched in his possession. His owner ridiculed and abused him, then sold him at another auction as a slave. A higher-ranking nobleman bought him, but Rion escaped on the journey to his new owner’s house.",
-  "He fled deep into the woods and wandered for days until he collapsed from hunger. There, he met Khianna, a pink-haired human girl. Her kindness and innocence convinced her father to take him in. Rion grew up with Khianna and her father for years, until Khianna turned sixteen.",
-  "The human kingdom eventually discovered that a civilian was sheltering someone it considered a monster. The king ordered guards and villagers to find them and kill Rion. When they reached the house, the villagers threatened Khianna and her father with weapons and fire.",
-  "Rion panicked and tried to protect them, but his reaction only intensified the villagers’ anger and hatred. He went on a rampage, breathing fire through the forest. Khianna and her father stepped back in terror as part of their burning house collapsed onto them, killing them both.",
-  "When Rion saw Khianna burning, he lost control and killed the villagers. He believed they had killed her, unable to recognize that his own fire had caused her death.",
-  "Afterward, he carried Khianna’s body and searched for a way to revive her, even if she could no longer return as a human.",
-  "Lore is still unfinished. What happens next has not been decided."
-];
-
-const characters = [
-  {
-    id: "revi",
-    name: "Revi",
-    eyebrow: "Meet my original character",
-    symbol: "✧",
-    chips: ["Original character", "Lore in development"],
-    intro:
-      "This is Revi, a character I created around June 2024. His story is still unknown for now, " +
-      "but this is where I’ll collect his artwork and the details as they develop.",
-    facts: [
-      ["Age", "21"],
-      ["Height", "5′11″"],
-      ["Orientation", "Bisexual"],
-      ["Created", "Around June 2024"]
-    ],
-    art: [
-      { item: 0, label: "View full artwork ↗" }
-    ],
-    loreTitle: "A story still taking shape.",
-    loreText: "Lore still unknown for now."
-  },
-  {
-    id: "rion",
-    name: "Rion",
-    eyebrow: "From the dragon world above",
-    symbol: "✧",
-    chips: ["Dragon", "Unfinished lore"],
-    intro:
-      "A dragon who fell into the human world, found a home with Khianna and her father, " +
-      "and lost them in a tragedy he could not understand.",
-    facts: [
-      ["Species", "Dragon"],
-      ["Created", "Around May 2026"],
-      ["In this artwork", "Left · black eyes"],
-      ["Story status", "Unfinished"]
-    ],
-    art: [
-      { item: 1, label: "View Rion & Khianna ↗" }
-    ],
-    loreTitle: "A search that isn’t over.",
-    loreText:
-      "Rion is looking for a way to bring Khianna back, even if she cannot return as a human.",
-    storyTitle: "Read Rion’s story · unfinished",
-    story: rionStory
-  },
-  {
-    id: "khianna",
-    name: "Khianna",
-    eyebrow: "A little kindness changed his world",
-    symbol: "♡",
-    chips: ["Human · main story", "Alternate version"],
-    intro:
-      "Khianna is the pink-haired girl beside Rion. Her kindness and innocence convinced her " +
-      "father to take him in, and they grew up together for years.",
-    facts: [
-      ["Created", "Around April 2026"],
-      ["Main-story species", "Human"],
-      ["Age at the attack", "16"],
-      ["Story status", "Unfinished"]
-    ],
-    art: [
-      {
-        item: 1,
-        heading: "With Rion · main-story artwork",
-        label: "View Khianna & Rion ↗"
-      },
-      {
-        item: 2,
-        heading: "Alternate version",
-        label: "View alternate Khianna ↗"
-      }
-    ],
-    loreTitle: "Two versions, one character.",
-    loreText:
-      "The winged, scythe-bearing drawing is another version of Khianna. " +
-      "Its place in the story is still to be established.",
-    storyTitle: "Khianna’s place in the story",
-    story: [
-      "Khianna and her father gave Rion a home after he escaped captivity and collapsed from hunger in the woods. They lived together for years, until Khianna turned sixteen.",
-      "When the kingdom discovered that they were sheltering Rion, villagers and guards came for him. During the confrontation, Rion’s fire spread, and part of the burning house collapsed onto Khianna and her father, killing them.",
-      "Rion believed the villagers had killed Khianna, although his own fire had caused her death. He later carried her body in search of a way to revive her. The story remains unfinished.",
-      "The alternate artwork is a separate version of Khianna; what it means for this unfinished story has not been decided."
-    ]
-  },
-  {
-    id: "cathelyn",
-    name: "Cathelyn",
-    eyebrow: "A character with her own little world",
-    symbol: "♡",
-    chips: ["Original character", "Separate story"],
-    intro:
-      "A character I created around June 2026, separate from Rion and Khianna’s story. " +
-      "Cathelyn is naturally charming and playful, with an affectionate side she shares " +
-      "with people she trusts.",
-    facts: [
-      ["Age", "19"],
-      ["Height", "5′4″ · 163 cm"],
-      ["Birthday", "May 18"],
-      ["Created", "Around June 2026"]
-    ],
-    art: [
-      { item: 3, label: "View Cathelyn’s character sheet ↗" }
-    ],
-    loreTitle: "Sweet beneath the teasing.",
-    loreText:
-      "Confident without being overly serious, she enjoys playful teasing " +
-      "and has a playful sense of humor.",
-    storyTitle: "Personality, likes & dislikes",
-    story: [
-      "Cathelyn loves playful teasing and is naturally charming. She is confident, with a playful sense of humor, and notices when someone gets shy around her.",
-      "She is affectionate toward people she trusts, and surprisingly sweet when she drops the teasing.",
-      "Likes: Music, compliments, playful arguments, and flirting.",
-      "Dislikes: Being ignored, boring conversations, overly serious people, and losing challenges."
-    ]
-  }
-];
-
-function makeTextElement(tag, text, className) {
-  const element = document.createElement(tag);
-  if (className) element.className = className;
-  element.textContent = text;
-  return element;
-}
-
-characters.forEach((character, index) => {
-  const tab = makeTextElement("button", character.name, "tab");
-  tab.type = "button";
-  tab.id = "character-" + character.id + "-tab";
-  tab.setAttribute("role", "tab");
-  tab.setAttribute("aria-selected", String(index === 0));
-  tab.setAttribute("aria-controls", "character-" + character.id);
-  tab.dataset.character = character.id;
-  tab.tabIndex = index === 0 ? 0 : -1;
-  $("character-tabs").append(tab);
-
-  const article = document.createElement("article");
-  article.className = "character-profile";
-  article.id = "character-" + character.id;
-  article.setAttribute("role", "tabpanel");
-  article.setAttribute("aria-labelledby", tab.id);
-  article.hidden = index !== 0;
-
-  const artColumn = document.createElement("div");
-  artColumn.className = "character-art-column";
-
-  character.art.forEach(art => {
-    const item = portfolioItems[art.item];
-    const wrapper = document.createElement("div");
-    wrapper.className = "character-art-switch";
-
-    if (art.heading) {
-      wrapper.append(makeTextElement("p", art.heading, "label"));
-    }
-
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "character-art-button";
-    button.setAttribute("aria-haspopup", "dialog");
-    button.setAttribute("aria-label", art.label);
-
-    const image = document.createElement("img");
-    image.src = item.src;
-    image.alt = item.title;
-    image.loading = "lazy";
-
-    button.append(image, makeTextElement("span", art.label));
-    button.addEventListener("click", () => {
-      openDialog(
-        "Original character · Heart / KHeart67",
-        item.title,
-        [item.description],
-        item.src
-      );
-    });
-
-    wrapper.append(button);
-    artColumn.append(wrapper);
-  });
-
-  artColumn.append(makeTextElement(
-    "p",
-    "Original characters & artwork by Heart · KHeart67",
-    "small muted character-credit"
-  ));
-
-  const info = document.createElement("div");
-  info.className = "character-info";
-  info.append(makeTextElement("p", character.eyebrow, "eyebrow"));
-
-  const heading = makeTextElement("h3", character.name);
-  const symbol = makeTextElement("span", character.symbol);
-  symbol.setAttribute("aria-hidden", "true");
-  heading.append(symbol);
-  info.append(heading);
-
-  const chips = document.createElement("div");
-  chips.className = "chips";
-  character.chips.forEach(text => chips.append(makeTextElement("span", text, "chip")));
-  info.append(chips);
-  info.append(makeTextElement("p", character.intro, "character-intro"));
-
-  const facts = document.createElement("dl");
-  facts.className = "character-facts";
-  character.facts.forEach(([label, value]) => {
-    const div = document.createElement("div");
-    div.append(makeTextElement("dt", label), makeTextElement("dd", value));
-    facts.append(div);
-  });
-  info.append(facts);
-
-  const lore = document.createElement("div");
-  lore.className = "character-lore";
-  lore.append(
-    makeTextElement("h4", character.loreTitle),
-    makeTextElement("p", character.loreText)
-  );
-  info.append(lore);
-
-  const collectionLink = makeTextElement(
-    "a", "Find " + character.name + " in the collection ↗", "link"
-  );
-  collectionLink.href = "#works";
-  info.append(collectionLink);
-
-  article.append(artColumn, info);
-
-  if (character.story) {
-    const details = document.createElement("details");
-    details.className = "character-story";
-    const summary = makeTextElement("summary", character.storyTitle);
-    const body = document.createElement("div");
-    body.className = "detail-body";
-    character.story.forEach(text => body.append(makeTextElement("p", text)));
-    details.append(summary, body);
-    article.append(details);
-  }
-
-  $("character-panels").append(article);
-});
-
-/* Life map and suggested SMART plans. */
-const goals = {
-  drawing: {
-    title: "Build my drawing practice",
-    subtitle: "Start with small studies",
-    plan: [
-      "Draw one focused character or portrait study.",
-      "Complete three 15-minute studies.",
-      "Use one reference and one page per study.",
-      "Strengthen drawing foundations for character design.",
-      "Try this across two weeks, then review."
-    ]
-  },
-  characters: {
-    title: "Develop original characters",
-    subtitle: "Expressions, poses & reference sheets",
-    plan: [
-      "Explore expressions for one original character.",
-      "Draw a sheet with three expressions.",
-      "Use an existing character, such as Revi, Rion, or Khianna.",
-      "Build expressive character designs.",
-      "Use three short sessions, then reflect."
-    ]
-  },
-  portfolio: {
-    title: "Build a portfolio",
-    subtitle: "Select, reflect & share",
-    plan: [
-      "Select artwork for my portfolio.",
-      "Choose three pieces and write a short reflection for each.",
-      "Use work I have already made.",
-      "Show my creative direction and growth.",
-      "Review after my next small set of finished pieces."
-    ]
-  },
-  animation: {
-    title: "Explore animation",
-    subtitle: "Timing, movement & storytelling",
-    plan: [
-      "Explore a simple movement through a bouncing-ball exercise.",
-      "Save one short movement study and one revision.",
-      "Work with a short clip and a tool I am learning.",
-      "Develop timing and movement for animation.",
-      "Allow four practice sessions, at my own pace."
-    ]
-  },
-  three: {
-    title: "Try a small 3D study",
-    subtitle: "One simple model at a time",
-    plan: [
-      "Explore one simple 3D object.",
-      "Save a model screenshot and a note about the process.",
-      "Start with a basic shape and a beginner demonstration.",
-      "Build toward 3D animation and character design.",
-      "Try a few short sessions before choosing a new study."
-    ]
-  },
-  story: {
-    title: "Tell a little visual story",
-    subtitle: "Connect characters and motion",
-    plan: [
-      "Plan a tiny visual story around one character.",
-      "Create a three-panel storyboard.",
-      "Keep the setting and action simple.",
-      "Connect character design with visual storytelling.",
-      "Try after a few drawing and movement studies."
-    ]
-  },
-  confidence: {
-    title: "Grow with confidence",
-    subtitle: "Finish, reflect & share",
-    plan: [
-      "Ask for feedback on one work in progress.",
-      "Write down one helpful suggestion and try it.",
-      "Choose a trusted person and a specific question.",
-      "Practice sharing work and speaking up.",
-      "Try once after my next study."
-    ]
-  },
-  routine: {
-    title: "Build a kinder routine",
-    subtitle: "Small goals & realistic practice",
-    plan: [
-      "Make a visual plan for creative practice.",
-      "Choose two small practice sessions and reflect afterward.",
-      "Fit sessions around my classes and energy.",
-      "Support consistency without expecting perfection.",
-      "Try for one week and adjust."
-    ]
-  },
-  voice: {
-    title: "Express myself",
-    subtitle: "Art, music & my own voice",
-    plan: [
-      "Create a piece inspired by a feeling or music.",
-      "Finish one small sketch and describe the inspiration.",
-      "Use a familiar medium and a manageable idea.",
-      "Explore art, music, and honest self-expression.",
-      "Try during my next personal drawing session."
-    ]
-  }
+const imageAlternatives = {
+  "IMG_20261110_200052_edit_417156193354328.jpg": [
+    "IMG_20261110_200052_edit_417156193354328(2).jpg",
+    "IMG_20261110_200052_edit_417156193354328(1).jpg"
+  ],
+  "IMG_20261110_223835_267(2).jpg": [
+    "IMG_20261110_223835_267.jpg",
+    "IMG_20261110_223835_267(1).jpg"
+  ]
 };
 
-const goalPaths = [
-  { title: "✎ Drawing & characters", nodes: ["drawing", "characters", "portfolio"] },
-  { title: "✦ 2D & 3D animation", nodes: ["animation", "three", "story"] },
-  { title: "♡ Personal growth", nodes: ["confidence", "routine", "voice"] }
-];
-
-goalPaths.forEach(path => {
-  const column = document.createElement("div");
-  column.className = "journey-path";
-  column.append(makeTextElement("h4", path.title));
-
-  path.nodes.forEach((key, index) => {
-    const goal = goals[key];
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "goal";
-    button.setAttribute("aria-haspopup", "dialog");
-    button.append(
-      makeTextElement("small", "Step " + String(index + 1).padStart(2, "0"), "label"),
-      makeTextElement("strong", goal.title),
-      makeTextElement("small", goal.subtitle + " ↗")
-    );
-
-    button.addEventListener("click", () => {
-      const labels = ["Specific", "Measurable", "Achievable", "Relevant", "Time frame"];
-      openDialog(
-        "Suggested SMART goal · flexible practice plan",
-        goal.title,
-        goal.plan.map((text, i) => labels[i] + ": " + text)
-      );
-    });
-
-    column.append(button);
-  });
-
-  $("life-map-paths").append(column);
-});
-
-/* Class schedule: Monday = 0, Tuesday = 1, and so on. */
-const classSchedule = [
-  { day: 0, title: "History of Graphic Design", code: "MA103 - 16", start: 750, end: 900 },
-  { day: 0, title: "Drawing 1", code: "MA102 - 16", start: 930, end: 1080 },
-  { day: 2, title: "Mathematics in the Modern World", code: "GE002 - 21", start: 450, end: 600 },
-  { day: 2, title: "Self Development and Goal Setting", code: "IR001 - 23", start: 750, end: 900 },
-  { day: 2, title: "Civic Welfare 1", code: "NTP001 - 21", start: 930, end: 1080 },
-  { day: 3, title: "PATHFIT 1", code: "PATHFIT001 - 20", start: 930, end: 1050 },
-  { day: 4, title: "Art Appreciation", code: "GE009 - 18", start: 930, end: 1080 }
-];
-
-const scheduleDays = [
-  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-];
-
-function formatTime(minutes) {
-  const hour = Math.floor(minutes / 60);
-  return ((hour + 11) % 12 + 1) + ":" +
-    String(minutes % 60).padStart(2, "0") +
-    (hour < 12 ? " AM" : " PM");
-}
-
-function openCourse(course) {
-  openDialog(
-    "My class week · Philippine time",
-    course.title,
-    [
-      scheduleDays[course.day] + " · " +
-      formatTime(course.start) + "–" + formatTime(course.end),
-      course.code
-    ]
-  );
-}
-
-function makeCourseButton(course, listView) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.setAttribute("aria-haspopup", "dialog");
-
-  if (listView) {
-    button.className = "class-list-item";
-    button.append(
-      makeTextElement("strong", course.title),
-      makeTextElement(
-        "span",
-        formatTime(course.start) + "–" + formatTime(course.end) + " · " + course.code
-      )
-    );
-  } else {
-    button.append(
-      makeTextElement("span", course.code, "label"),
-      makeTextElement("strong", course.title),
-      makeTextElement("span", formatTime(course.start) + "–" + formatTime(course.end))
-    );
-  }
-
-  button.addEventListener("click", () => openCourse(course));
-  return button;
-}
-
-function renderSchedule() {
-  const table = document.createElement("table");
-  table.className = "timetable";
-
-  const caption = makeTextElement(
-    "caption", "Heart’s weekly class schedule in Philippine time", "sr-only"
-  );
-  table.append(caption);
-
-  const thead = document.createElement("thead");
-  const header = document.createElement("tr");
-
-  ["Time", ...scheduleDays].forEach(day => {
-    const th = makeTextElement("th", day);
-    th.scope = "col";
-    header.append(th);
-  });
-
-  thead.append(header);
-  table.append(thead);
-
-  const tbody = document.createElement("tbody");
-
-  for (let minutes = 420; minutes < 1080; minutes += 30) {
-    const row = document.createElement("tr");
-    const time = makeTextElement("th", formatTime(minutes));
-    time.scope = "row";
-    row.append(time);
-
-    for (let day = 0; day < 7; day++) {
-      const course = classSchedule.find(item =>
-        item.day === day && item.start <= minutes && minutes < item.end
-      );
-
-      if (course && course.start !== minutes) continue;
-
-      const td = document.createElement("td");
-
-      if (course) {
-        td.className = "class-cell";
-        td.rowSpan = (course.end - course.start) / 30;
-        td.append(makeCourseButton(course, false));
-      } else {
-        td.className = "free-slot";
-      }
-
-      row.append(td);
-    }
-    tbody.append(row);
-  }
-
-  table.append(tbody);
-  $("schedule-week").replaceChildren(table);
-  $("schedule-list").replaceChildren();
-
-  scheduleDays.forEach((day, dayIndex) => {
-    const article = document.createElement("article");
-    article.className = "schedule-day";
-    article.append(makeTextElement("h4", day));
-
-    const courses = classSchedule
-      .filter(course => course.day === dayIndex)
-      .sort((a, b) => a.start - b.start);
-
-    if (!courses.length) {
-      article.append(makeTextElement("p", "No classes listed.", "small muted"));
-    } else {
-      courses.forEach(course => article.append(makeCourseButton(course, true)));
-    }
-
-    $("schedule-list").append(article);
-  });
-}
-
-renderSchedule();
-
-document.querySelectorAll("[data-schedule-view]").forEach(button => {
-  button.addEventListener("click", () => {
-    const listView = button.dataset.scheduleView === "list";
-    $("schedule-week").hidden = listView;
-    $("schedule-list").hidden = !listView;
-
-    document.querySelectorAll("[data-schedule-view]").forEach(other => {
-      other.setAttribute("aria-pressed", String(other === button));
-    });
-  });
-});
-
-$("schedule-original").addEventListener("click", () => {
-  openDialog(
-    "Reference timetable",
-    "My original class schedule",
-    ["Times shown in the timetable are transcribed from this image."],
-    images.schedule
-  );
-});
-
-/* Keyboard-accessible tabs. */
-function setupTabs(group) {
-  const tabs = [...document.querySelectorAll("[data-" + group + "]")];
-
-  function selectTab(selected) {
-    tabs.forEach(tab => {
-      const active = tab === selected;
-      tab.setAttribute("aria-selected", String(active));
-      tab.tabIndex = active ? 0 : -1;
-      $(tab.getAttribute("aria-controls")).hidden = !active;
-    });
-  }
-
-  tabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => selectTab(tab));
-
-    tab.addEventListener("keydown", event => {
-      let target;
-      if (event.key === "ArrowRight") target = tabs[(index + 1) % tabs.length];
-      if (event.key === "ArrowLeft") target = tabs[(index - 1 + tabs.length) % tabs.length];
-      if (event.key === "Home") target = tabs[0];
-      if (event.key === "End") target = tabs[tabs.length - 1];
-
-      if (target) {
-        event.preventDefault();
-        selectTab(target);
-        target.focus();
-      }
-    });
-  });
-}
-
-["work", "study", "lounge", "character"].forEach(setupTabs);
-
-/* Theme preference. */
-function setTheme(light) {
-  document.body.classList.toggle("light", light);
-  $("theme-toggle").setAttribute("aria-pressed", String(light));
-  $("theme-label").textContent = light ? "Back to the dark?" : "A little more light?";
-  $("theme-icon").textContent = light ? "☀" : "☾";
-  document.querySelector('meta[name="theme-color"]').content =
-    light ? "#f3e7f6" : "#100d16";
-}
-
-try {
-  setTheme(localStorage.getItem("heart-purple-theme") === "light");
-} catch {
-  setTheme(false);
-}
-
-$("theme-toggle").addEventListener("click", () => {
-  const light = !document.body.classList.contains("light");
-  setTheme(light);
-  try {
-    localStorage.setItem("heart-purple-theme", light ? "light" : "dark");
-  } catch {}
-});
-
-/* Checklist: saved only in the visitor's browser. */
-let tasks = [];
-let storageAvailable = true;
-
-try {
-  const saved = JSON.parse(localStorage.getItem("heart-creative-tasks") || "[]");
-  if (Array.isArray(saved)) {
-    tasks = saved
-      .filter(item =>
-        item && typeof item.id === "string" && typeof item.text === "string"
-      )
-      .map(item => ({
-        id: item.id,
-        text: item.text.slice(0, 180),
-        done: Boolean(item.done)
-      }));
-  }
-} catch {
-  storageAvailable = false;
-}
-
-function renderTasks() {
-  $("task-list").replaceChildren();
-  let completed = 0;
-
-  tasks.forEach(task => {
-    if (task.done) completed++;
-
-    const li = document.createElement("li");
-    li.className = "task" + (task.done ? " done" : "");
-
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = task.done;
-    checkbox.id = "task-" + task.id;
-    checkbox.addEventListener("change", () => {
-      task.done = checkbox.checked;
-      saveTasks();
-    });
-
-    const label = makeTextElement("label", task.text);
-    label.htmlFor = checkbox.id;
-
-    const remove = makeTextElement("button", "×", "icon-btn");
-    remove.type = "button";
-    remove.setAttribute("aria-label", "Delete task: " + task.text);
-    remove.addEventListener("click", () => {
-      tasks = tasks.filter(item => item.id !== task.id);
-      saveTasks();
-    });
-
-    li.append(checkbox, label, remove);
-    $("task-list").append(li);
-  });
-
-  $("task-count").textContent = tasks.length
-    ? completed + " of " + tasks.length + " little steps complete."
-    : "No tasks yet. Start with one small, finishable step.";
-
-  $("task-progress").style.width =
-    (tasks.length ? completed / tasks.length * 100 : 0) + "%";
-
-  $("storage-status").textContent = storageAvailable
-    ? "Saved on this browser only."
-    : "Browser storage is unavailable. Your checklist will last for this visit.";
-}
-
-function saveTasks() {
-  try {
-    localStorage.setItem("heart-creative-tasks", JSON.stringify(tasks));
-  } catch {
-    storageAvailable = false;
-  }
-  renderTasks();
-}
-
-$("task-form").addEventListener("submit", event => {
-  event.preventDefault();
-  const text = $("task-input").value.trim();
-  if (!text) return;
-
-  tasks.push({
-    id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7),
-    text,
-    done: false
-  });
-
-  $("task-input").value = "";
-  saveTasks();
-});
-
-renderTasks();
-
-/* Journal reflections. */
-const journalEntries = [
-  {
-    title: "Finding my own creative voice",
-    tag: "reflection",
-    teaser: "Making room for a style and a pace that feel like me.",
-    body: [
-      "Art and music give me different ways to connect with feelings and ideas. I’m drawn to expressive characters and visual worlds, and I want to make work that carries a little of that feeling.",
-      "Finding my voice means allowing myself to explore. A sketch or an experiment doesn’t need to become a perfect finished piece to teach me something."
-    ]
-  },
-  {
-    title: "Learning by seeing and doing",
-    tag: "process",
-    teaser: "Why references, examples, and little experiments help me learn.",
-    body: [
-      "Images, demonstrations, and hands-on practice help me understand an idea. When I can see how something works and try it for myself, I have a clearer place to begin.",
-      "Visual plans and manageable steps can help me turn curiosity into a creative routine. I’m learning to give myself enough structure to finish, while leaving room to experiment."
-    ]
-  },
-  {
-    title: "Still growing, still creating",
-    tag: "reflection",
-    teaser: "A little reminder about confidence, consistency, and moving forward.",
-    body: [
-      "I’m aware of how overthinking, motivation, and consistency can affect my creative work. Recognizing them gives me a chance to choose a smaller next step.",
-      "I want to build confidence in speaking up, asking for feedback, and sharing what I make. I can support the creativity and care I already have with practice and steady action."
-    ]
-  }
-];
-
-function renderJournal() {
-  const query = $("journal-search").value.trim().toLowerCase();
-  const tag = $("journal-filter").value;
-
-  const matches = journalEntries.filter(entry =>
-    (tag === "all" || entry.tag === tag) &&
-    (entry.title + " " + entry.teaser + " " + entry.body.join(" "))
-      .toLowerCase().includes(query)
-  );
-
-  $("journal-list").replaceChildren();
-  $("journal-empty").hidden = matches.length > 0;
-
-  matches.forEach(entry => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "journal-card";
-    button.setAttribute("aria-haspopup", "dialog");
-
-    const label = entry.tag === "process" ? "Creative process" : "Reflection";
-    button.append(
-      makeTextElement("span", label, "label"),
-      makeTextElement("h3", entry.title),
-      makeTextElement("p", entry.teaser + " ↗")
-    );
-
-    button.addEventListener("click", () => {
-      openDialog(label, entry.title, entry.body);
-    });
-
-    $("journal-list").append(button);
-  });
-}
-
-$("journal-search").addEventListener("input", renderJournal);
-$("journal-filter").addEventListener("change", renderJournal);
-renderJournal();
-
-/* Original self-expression quotes. */
-const quotes = [
-  "Your softness can have spikes. Your strength can wear pink.",
-  "Black lace, pink ribbons, heavy riffs — there’s room for every part of you.",
-  "Let your art speak in the voice you were once afraid to use.",
-  "You are allowed to outgrow the version of yourself that only existed to fit in.",
-  "Make something honest enough that someone else feels less alone.",
-  "Some days, self-expression is a battle jacket. Some days, it’s a pink ribbon. You get to choose."
-];
-
-let quoteIndex = 0;
-
-function changeQuote(amount) {
-  quoteIndex = (quoteIndex + amount + quotes.length) % quotes.length;
-  $("quote-text").textContent = quotes[quoteIndex];
-  $("quote-count").textContent =
-    String(quoteIndex + 1).padStart(2, "0") + " / " +
-    String(quotes.length).padStart(2, "0");
-}
-
-$("quote-prev").addEventListener("click", () => changeQuote(-1));
-$("quote-next").addEventListener("click", () => changeQuote(1));
-changeQuote(0);
-
-/* Drawing board with stroke history, undo, eraser and PNG download. */
-const canvas = $("drawing");
-const ctx = canvas.getContext("2d");
-let strokes = [];
-let currentStroke = null;
-
-function paintStroke(stroke) {
-  ctx.save();
-  ctx.strokeStyle = stroke.color;
-  ctx.fillStyle = stroke.color;
-  ctx.lineWidth = stroke.size;
-  ctx.lineCap = "round";
-  ctx.lineJoin = "round";
-
-  if (stroke.points.length === 1) {
-    ctx.beginPath();
-    ctx.arc(
-      stroke.points[0].x,
-      stroke.points[0].y,
-      stroke.size / 2,
-      0,
-      Math.PI * 2
-    );
-    ctx.fill();
-  } else {
-    ctx.beginPath();
-    ctx.moveTo(stroke.points[0].x, stroke.points[0].y);
-    stroke.points.slice(1).forEach(point => ctx.lineTo(point.x, point.y));
-    ctx.stroke();
-  }
-
-  ctx.restore();
-}
-
-function redraw() {
-  ctx.fillStyle = "#ffffff";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  strokes.forEach(paintStroke);
-  if (currentStroke) paintStroke(currentStroke);
-}
-
-function drawingPoint(event) {
-  const r = canvas.getBoundingClientRect();
-  return {
-    x: Math.max(0, Math.min(canvas.width,
-      (event.clientX - r.left) * canvas.width / r.width
-    )),
-    y: Math.max(0, Math.min(canvas.height,
-      (event.clientY - r.top) * canvas.height / r.height
-    ))
-  };
-}
-
-function updateUndo() {
-  $("draw-undo").disabled = strokes.length === 0;
-}
-
-canvas.addEventListener("pointerdown", event => {
-  if (event.pointerType === "mouse" && event.button !== 0) return;
-  if (currentStroke) return;
-
-  const r = canvas.getBoundingClientRect();
-  canvas.setPointerCapture(event.pointerId);
-
-  currentStroke = {
-    pointerId: event.pointerId,
-    color: $("brush-tool").value === "eraser" ? "#ffffff" : $("brush-color").value,
-    size: Number($("brush-size").value) * canvas.width / r.width,
-    points: [drawingPoint(event)]
-  };
-
-  redraw();
-  $("draw-status").textContent = "";
-});
-
-canvas.addEventListener("pointermove", event => {
-  if (!currentStroke || currentStroke.pointerId !== event.pointerId) return;
-  currentStroke.points.push(drawingPoint(event));
-  redraw();
-});
-
-function finishStroke(event) {
-  if (!currentStroke || currentStroke.pointerId !== event.pointerId) return;
-  strokes.push(currentStroke);
-  currentStroke = null;
-  redraw();
-  updateUndo();
-}
-
-canvas.addEventListener("pointerup", finishStroke);
-canvas.addEventListener("pointercancel", finishStroke);
-canvas.addEventListener("lostpointercapture", finishStroke);
-
-$("draw-undo").addEventListener("click", () => {
-  strokes.pop();
-  redraw();
-  updateUndo();
-});
-
-$("draw-clear").addEventListener("click", () => {
-  strokes = [];
-  currentStroke = null;
-  redraw();
-  updateUndo();
-  $("draw-status").textContent = "A fresh little canvas.";
-});
-
-$("brush-size").addEventListener("input", () => {
-  $("size-value").textContent = $("brush-size").value;
-});
-
-$("draw-save").addEventListener("click", () => {
-  canvas.toBlob(blob => {
-    if (!blob) {
-      $("draw-status").textContent = "The drawing could not be saved. Please try again.";
-      return;
-    }
-
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "a-little-doodle-for-heart.png";
-    document.body.append(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 30000);
-
-    $("draw-status").textContent =
-      "Your PNG is ready to download. It has not been sent to Heart.";
-  }, "image/png");
-});
-
-redraw();
-updateUndo();
-
-/* Commission shortcuts and form validation. */
-document.querySelectorAll(".pick-type").forEach(link => {
-  link.addEventListener("click", () => {
-    $("commission-type").value = link.dataset.type;
-  });
-});
-
-document.querySelectorAll(".email-form").forEach(form => {
-  form.addEventListener("submit", event => {
-    for (const name of ["name", "message"]) {
-      const field = form.elements.namedItem(name);
-      field.value = field.value.trim();
-
-      if (!field.value) {
-        event.preventDefault();
-        field.setCustomValidity("Please fill in this field.");
-        field.reportValidity();
-        field.addEventListener("input", () => field.setCustomValidity(""), { once: true });
-        return;
-      }
+function prepareImage(img, filename) {
+  const alternatives = imageAlternatives[filename] || [];
+  let attempt = 0;
+
+  img.addEventListener("error", () => {
+    if (attempt < alternatives.length) {
+      img.src = alternatives[attempt++];
     }
   });
-});
 
-/* Page routing and mobile navigation. */
+  img.src = filename;
+}
+
+/* PAGE NAVIGATION */
+
 const pages = [
   "about", "works", "study", "journal",
   "characters", "lounge", "commissions", "contact"
@@ -2817,10 +3261,11 @@ function closeMenu() {
 
 function route(focus = false) {
   let hash = "";
+
   try {
     hash = decodeURIComponent(location.hash.slice(1));
   } catch {
-    hash = "";
+    hash = "about";
   }
 
   const next = pages.includes(hash) ? hash : (aliases[hash] || "about");
@@ -2839,10 +3284,12 @@ function route(focus = false) {
   });
 
   $("current-page").textContent = pageNames[next];
-  document.title =
-    (next === "about" ? "Heart ♡" : pageNames[next] + " — Heart ♡") +
-    " | Art & Animation";
 
+  const title = next === "about"
+    ? "Heart ♡"
+    : pageNames[next].toLowerCase().replace(/\b\w/g, c => c.toUpperCase()) + " — Heart ♡";
+
+  document.title = title + " | Art & Animation";
   activePage = next;
   closeMenu();
 
@@ -2874,8 +3321,893 @@ document.addEventListener("click", event => {
     window.innerWidth <= 850 &&
     !$("sidebar").contains(event.target) &&
     !$("menu-toggle").contains(event.target)
-  ) closeMenu();
+  ) {
+    closeMenu();
+  }
 });
+
+/* KEYBOARD-ACCESSIBLE TABS */
+
+function setupTabs(group) {
+  const tabs = [...document.querySelectorAll("[data-" + group + "]")];
+
+  function select(tab) {
+    tabs.forEach(item => {
+      const selected = item === tab;
+      item.setAttribute("aria-selected", String(selected));
+      item.tabIndex = selected ? 0 : -1;
+      $(item.getAttribute("aria-controls")).hidden = !selected;
+    });
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => select(tab));
+
+    tab.addEventListener("keydown", event => {
+      let target;
+
+      if (event.key === "ArrowRight") {
+        target = tabs[(index + 1) % tabs.length];
+      }
+      if (event.key === "ArrowLeft") {
+        target = tabs[(index - 1 + tabs.length) % tabs.length];
+      }
+      if (event.key === "Home") target = tabs[0];
+      if (event.key === "End") target = tabs[tabs.length - 1];
+
+      if (target) {
+        event.preventDefault();
+        select(target);
+        target.focus();
+      }
+    });
+  });
+}
+
+["work", "study", "lounge", "character"].forEach(setupTabs);
+
+/* LIGHT / DARK THEME */
+
+function setTheme(light) {
+  document.body.classList.toggle("light", light);
+  $("theme-toggle").setAttribute("aria-pressed", String(light));
+  $("theme-label").textContent = light
+    ? "Back to the dark?"
+    : "A little more light?";
+  $("theme-icon").textContent = light ? "☀" : "☾";
+
+  document.querySelector('meta[name="theme-color"]').content =
+    light ? "#f3e7f6" : "#100d16";
+}
+
+try {
+  setTheme(localStorage.getItem("heart-purple-theme") === "light");
+} catch {
+  setTheme(false);
+}
+
+$("theme-toggle").addEventListener("click", () => {
+  const light = !document.body.classList.contains("light");
+  setTheme(light);
+
+  try {
+    localStorage.setItem("heart-purple-theme", light ? "light" : "dark");
+  } catch {}
+});
+
+/* SHARED DETAIL DIALOG */
+
+function openDialog(label, title, paragraphs, imageSrc) {
+  $("dialog-label").textContent = label;
+  $("dialog-title").textContent = title;
+
+  const body = $("dialog-body");
+  body.replaceChildren();
+
+  if (imageSrc) {
+    const img = document.createElement("img");
+    img.alt = title;
+    prepareImage(img, imageSrc);
+    body.append(img);
+  }
+
+  paragraphs.forEach(text => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    body.append(paragraph);
+  });
+
+  if (!$("detail-dialog").open) $("detail-dialog").showModal();
+}
+
+$("detail-dialog").querySelector(".dialog-close")
+  .addEventListener("click", () => $("detail-dialog").close());
+
+$("detail-dialog").addEventListener("click", event => {
+  const rect = $("detail-dialog").getBoundingClientRect();
+
+  if (
+    event.target === $("detail-dialog") &&
+    (
+      event.clientX < rect.left ||
+      event.clientX > rect.right ||
+      event.clientY < rect.top ||
+      event.clientY > rect.bottom
+    )
+  ) {
+    $("detail-dialog").close();
+  }
+});
+
+/* CHARACTER ARTWORK LINKS */
+
+const characterArtwork = {
+  rion: portfolioItems[1],
+  "khianna-main": portfolioItems[1],
+  "khianna-alternate": portfolioItems[2],
+  cathelyn: portfolioItems[3],
+  shiela: portfolioItems[4],
+  valerie: portfolioItems[7],
+  shino: portfolioItems[12]
+};
+
+document.querySelectorAll("[data-character-art]").forEach(button => {
+  button.addEventListener("click", () => {
+    const art = characterArtwork[button.dataset.characterArt];
+
+    openDialog(
+      "Original character · Heart / KHeart67",
+      art.title,
+      [art.description],
+      art.src
+    );
+  });
+});
+
+$("revi-art").addEventListener("click", () => {
+  const art = portfolioItems[0];
+
+  openDialog(
+    "Original character · Heart / KHeart67",
+    art.title,
+    [art.description],
+    art.src
+  );
+});
+
+/* ART GALLERY */
+
+let artFilter = "all";
+
+function makeArtCard(art) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "art-card";
+  button.setAttribute("aria-haspopup", "dialog");
+
+  const img = document.createElement("img");
+  img.alt = art.alt || art.title;
+  img.loading = "lazy";
+  prepareImage(img, art.src);
+
+  const label = document.createElement("span");
+  label.textContent = art.title + " ↗";
+
+  button.append(img, label);
+
+  if (art.dateLabel) {
+    const date = document.createElement("small");
+    date.className = "art-date";
+    date.textContent = art.dateLabel;
+    button.append(date);
+  }
+
+  button.addEventListener("click", () => {
+    const label = (art.categories || []).includes("fanart")
+      ? "Fan art · Heart / KHeart67"
+      : "From the collection · Heart / KHeart67";
+
+    openDialog(label, art.title, [art.description || ""], art.src);
+  });
+
+  return button;
+}
+
+function renderArt() {
+  const items = portfolioItems.filter(art =>
+    art.type === "art" &&
+    (
+      artFilter === "all" ||
+      art.category === artFilter ||
+      (art.categories || []).includes(artFilter)
+    )
+  );
+
+  $("art-gallery").replaceChildren();
+  $("art-count").textContent =
+    items.length + " " + (items.length === 1 ? "piece" : "pieces");
+
+  $("art-empty").hidden = items.length > 0;
+
+  items.forEach(art => $("art-gallery").append(makeArtCard(art)));
+}
+
+document.querySelectorAll("[data-filter]").forEach(button => {
+  button.addEventListener("click", () => {
+    artFilter = button.dataset.filter;
+
+    document.querySelectorAll("[data-filter]").forEach(item => {
+      item.setAttribute("aria-pressed", String(item === button));
+    });
+
+    renderArt();
+  });
+});
+
+renderArt();
+
+for (const type of ["motion", "three"]) {
+  const items = portfolioItems.filter(art => art.type === type);
+  $(type + "-empty").hidden = items.length > 0;
+
+  items.forEach(art => {
+    if (type === "three") {
+      $(type + "-gallery").append(makeArtCard(art));
+      return;
+    }
+
+    const card = document.createElement("article");
+    card.className = "video-card";
+
+    const video = document.createElement("video");
+    video.src = art.src;
+    video.controls = true;
+    video.preload = "metadata";
+
+    const heading = document.createElement("h3");
+    heading.textContent = art.title;
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = art.description || "";
+
+    card.append(video, heading, paragraph);
+    $(type + "-gallery").append(card);
+  });
+}
+
+/* SMART GOALS */
+
+const goals = {
+  drawing: {
+    title: "Build my drawing practice",
+    paragraphs: [
+      "Specific: Draw one focused character or portrait study.",
+      "Measurable: Complete three 15-minute studies.",
+      "Achievable: Use one reference and one page per study.",
+      "Relevant: Strengthen drawing foundations for character design.",
+      "Time frame: Try this across two weeks, then review."
+    ]
+  },
+  animation: {
+    title: "Explore animation",
+    paragraphs: [
+      "Specific: Explore a simple movement through a bouncing-ball exercise.",
+      "Measurable: Save one short movement study and one revision.",
+      "Achievable: Work with a short clip and a tool I am learning.",
+      "Relevant: Develop timing and movement for animation.",
+      "Time frame: Allow four practice sessions, at my own pace."
+    ]
+  },
+  confidence: {
+    title: "Grow with confidence",
+    paragraphs: [
+      "Specific: Ask for feedback on one work in progress.",
+      "Measurable: Write down one helpful suggestion and try it.",
+      "Achievable: Choose a trusted person and a specific question.",
+      "Relevant: Practice sharing work and speaking up.",
+      "Time frame: Try once after my next study."
+    ]
+  },
+  characters: {
+    title: "Develop original characters",
+    paragraphs: [
+      "Specific: Explore expressions for one original character.",
+      "Measurable: Draw a sheet with three expressions.",
+      "Achievable: Use an existing character, such as Revi, Rion, or Khianna.",
+      "Relevant: Build expressive character designs.",
+      "Time frame: Use three short sessions, then reflect."
+    ]
+  },
+  portfolio: {
+    title: "Build a portfolio",
+    paragraphs: [
+      "Specific: Select artwork for my portfolio.",
+      "Measurable: Choose three pieces and write a short reflection for each.",
+      "Achievable: Use work I have already made.",
+      "Relevant: Show my creative direction and growth.",
+      "Time frame: Review after my next small set of finished pieces."
+    ]
+  },
+  "three-study": {
+    title: "Try a small 3D study",
+    paragraphs: [
+      "Specific: Explore one simple 3D object.",
+      "Measurable: Save a model screenshot and a note about the process.",
+      "Achievable: Start with a basic shape and a beginner demonstration.",
+      "Relevant: Build toward 3D animation and character design.",
+      "Time frame: Try a few short sessions before choosing a new study."
+    ]
+  },
+  "short-story": {
+    title: "Tell a little visual story",
+    paragraphs: [
+      "Specific: Plan a tiny visual story around one character.",
+      "Measurable: Create a three-panel storyboard.",
+      "Achievable: Keep the setting and action simple.",
+      "Relevant: Connect character design with visual storytelling.",
+      "Time frame: Try after a few drawing and movement studies."
+    ]
+  },
+  routine: {
+    title: "Build a kinder routine",
+    paragraphs: [
+      "Specific: Make a visual plan for creative practice.",
+      "Measurable: Choose two small practice sessions and reflect afterward.",
+      "Achievable: Fit sessions around my classes and energy.",
+      "Relevant: Support consistency without expecting perfection.",
+      "Time frame: Try for one week and adjust."
+    ]
+  },
+  voice: {
+    title: "Express myself",
+    paragraphs: [
+      "Specific: Create a piece inspired by a feeling or music.",
+      "Measurable: Finish one small sketch and describe the inspiration.",
+      "Achievable: Use a familiar medium and a manageable idea.",
+      "Relevant: Explore art, music, and honest self-expression.",
+      "Time frame: Try during my next personal drawing session."
+    ]
+  }
+};
+
+document.querySelectorAll("[data-goal]").forEach(button => {
+  button.addEventListener("click", () => {
+    const goal = goals[button.dataset.goal];
+    openDialog("A little direction", goal.title, goal.paragraphs);
+  });
+});
+
+/* CLASS SCHEDULE */
+
+const classSchedule = [
+  {
+    day: 0,
+    title: "History of Graphic Design",
+    code: "MA103 - 16",
+    start: 750,
+    end: 900
+  },
+  {
+    day: 0,
+    title: "Drawing 1",
+    code: "MA102 - 16",
+    start: 930,
+    end: 1080
+  },
+  {
+    day: 2,
+    title: "Mathematics in the Modern World",
+    code: "GE002 - 21",
+    start: 450,
+    end: 600
+  },
+  {
+    day: 2,
+    title: "Self Development and Goal Setting",
+    code: "IR001 - 23",
+    start: 750,
+    end: 900
+  },
+  {
+    day: 2,
+    title: "Civic Welfare 1",
+    code: "NTP001 - 21",
+    start: 930,
+    end: 1080
+  },
+  {
+    day: 3,
+    title: "PATHFIT 1",
+    code: "PATHFIT001 - 20",
+    start: 930,
+    end: 1050
+  },
+  {
+    day: 4,
+    title: "Art Appreciation",
+    code: "GE009 - 18",
+    start: 930,
+    end: 1080
+  }
+];
+
+const scheduleDays = [
+  "Monday", "Tuesday", "Wednesday", "Thursday",
+  "Friday", "Saturday", "Sunday"
+];
+
+function formatClassTime(minutes) {
+  const hour = Math.floor(minutes / 60);
+
+  return ((hour + 11) % 12 + 1) + ":" +
+    String(minutes % 60).padStart(2, "0") +
+    " " + (hour < 12 ? "AM" : "PM");
+}
+
+function showClass(course) {
+  openDialog(
+    "My class week · Philippine time",
+    course.title,
+    [
+      scheduleDays[course.day] + " · " +
+      formatClassTime(course.start) + "–" +
+      formatClassTime(course.end),
+      course.code
+    ]
+  );
+}
+
+function makeClassButton(course, listView = false) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.setAttribute("aria-haspopup", "dialog");
+
+  if (listView) {
+    button.className = "class-list-item";
+
+    const title = document.createElement("strong");
+    title.textContent = course.title;
+
+    const details = document.createElement("span");
+    details.textContent =
+      formatClassTime(course.start) + "–" +
+      formatClassTime(course.end) + " · " + course.code;
+
+    button.append(title, details);
+  } else {
+    const code = document.createElement("span");
+    code.className = "label";
+    code.textContent = course.code;
+
+    const title = document.createElement("strong");
+    title.textContent = course.title;
+
+    const time = document.createElement("span");
+    time.textContent =
+      formatClassTime(course.start) + "–" +
+      formatClassTime(course.end);
+
+    button.append(code, title, time);
+  }
+
+  button.addEventListener("click", () => showClass(course));
+  return button;
+}
+
+function renderSchedule() {
+  const headerRow = document.createElement("tr");
+
+  ["Time", ...scheduleDays].forEach(day => {
+    const cell = document.createElement("th");
+    cell.scope = "col";
+    cell.textContent = day;
+    headerRow.append(cell);
+  });
+
+  $("schedule-head").replaceChildren(headerRow);
+  $("schedule-body").replaceChildren();
+
+  for (let minutes = 420; minutes < 1080; minutes += 30) {
+    const row = document.createElement("tr");
+    const time = document.createElement("th");
+
+    time.scope = "row";
+    time.textContent = formatClassTime(minutes);
+    row.append(time);
+
+    for (let day = 0; day < 7; day++) {
+      const continuing = classSchedule.some(course =>
+        course.day === day &&
+        course.start < minutes &&
+        course.end > minutes
+      );
+
+      if (continuing) continue;
+
+      const course = classSchedule.find(course =>
+        course.day === day && course.start === minutes
+      );
+
+      const cell = document.createElement("td");
+
+      if (course) {
+        cell.className = "class-cell";
+        cell.rowSpan = (course.end - course.start) / 30;
+        cell.append(makeClassButton(course));
+      } else {
+        cell.className = "free-slot";
+      }
+
+      row.append(cell);
+    }
+
+    $("schedule-body").append(row);
+  }
+
+  $("schedule-list").replaceChildren();
+
+  scheduleDays.forEach((day, dayIndex) => {
+    const section = document.createElement("article");
+    section.className = "schedule-day";
+
+    const heading = document.createElement("h4");
+    heading.textContent = day;
+    section.append(heading);
+
+    const courses = classSchedule
+      .filter(course => course.day === dayIndex)
+      .sort((a, b) => a.start - b.start);
+
+    if (courses.length) {
+      courses.forEach(course => {
+        section.append(makeClassButton(course, true));
+      });
+    } else {
+      const paragraph = document.createElement("p");
+      paragraph.className = "small muted";
+      paragraph.textContent = "No classes listed.";
+      section.append(paragraph);
+    }
+
+    $("schedule-list").append(section);
+  });
+}
+
+renderSchedule();
+
+document.querySelectorAll("[data-schedule-view]").forEach(button => {
+  button.addEventListener("click", () => {
+    const list = button.dataset.scheduleView === "list";
+
+    $("schedule-week").hidden = list;
+    $("schedule-list").hidden = !list;
+
+    document.querySelectorAll("[data-schedule-view]").forEach(item => {
+      item.setAttribute("aria-pressed", String(item === button));
+    });
+  });
+});
+
+$("schedule-original").addEventListener("click", () => {
+  openDialog(
+    "Reference timetable",
+    "My original class schedule",
+    ["Times shown in the timetable are transcribed from this image."],
+    "Messenger_creation_E36301E9-676C-4838-85C2-C35C909B7880.jpeg"
+  );
+});
+
+/* JOURNAL */
+
+const journalEntries = [
+  {
+    title: "Finding my own creative voice",
+    tag: "reflection",
+    teaser: "Making room for a style and a pace that feel like me.",
+    body: [
+      "Art and music give me different ways to connect with feelings and " +
+      "ideas. I’m drawn to expressive characters and visual worlds, and " +
+      "I want to make work that carries a little of that feeling.",
+
+      "Finding my voice means allowing myself to explore. A sketch or " +
+      "an experiment doesn’t need to become a perfect finished piece " +
+      "to teach me something."
+    ]
+  },
+  {
+    title: "Learning by seeing and doing",
+    tag: "process",
+    teaser: "Why references, examples, and little experiments help me learn.",
+    body: [
+      "Images, demonstrations, and hands-on practice help me understand " +
+      "an idea. When I can see how something works and try it for myself, " +
+      "I have a clearer place to begin.",
+
+      "Visual plans and manageable steps can help me turn curiosity into " +
+      "a creative routine. I’m learning to give myself enough structure " +
+      "to finish, while leaving room to experiment."
+    ]
+  },
+  {
+    title: "Still growing, still creating",
+    tag: "reflection",
+    teaser: "A little reminder about confidence, consistency, and moving forward.",
+    body: [
+      "I’m aware of how overthinking, motivation, and consistency can " +
+      "affect my creative work. Recognizing them gives me a chance " +
+      "to choose a smaller next step.",
+
+      "I want to build confidence in speaking up, asking for feedback, " +
+      "and sharing what I make. I can support the creativity and care " +
+      "I already have with practice and steady action."
+    ]
+  }
+];
+
+function renderJournal() {
+  const query = $("journal-search").value.trim().toLowerCase();
+  const tag = $("journal-filter").value;
+
+  const matches = journalEntries.filter(entry =>
+    (tag === "all" || entry.tag === tag) &&
+    (
+      entry.title + " " +
+      entry.teaser + " " +
+      entry.body.join(" ")
+    ).toLowerCase().includes(query)
+  );
+
+  $("journal-list").replaceChildren();
+  $("journal-empty").hidden = matches.length > 0;
+
+  matches.forEach(entry => {
+    const button = document.createElement("button");
+    button.className = "journal-card";
+    button.type = "button";
+    button.setAttribute("aria-haspopup", "dialog");
+
+    const label = document.createElement("span");
+    label.className = "label";
+    label.textContent =
+      entry.tag === "process" ? "Creative process" : "Reflection";
+
+    const heading = document.createElement("h3");
+    heading.textContent = entry.title;
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = entry.teaser + " ↗";
+
+    button.append(label, heading, paragraph);
+
+    button.addEventListener("click", () => {
+      openDialog(label.textContent, entry.title, entry.body);
+    });
+
+    $("journal-list").append(button);
+  });
+}
+
+$("journal-search").addEventListener("input", renderJournal);
+$("journal-filter").addEventListener("change", renderJournal);
+renderJournal();
+
+/* QUOTES */
+
+const quotes = [
+  '"Siguro strengths mo is maganda naman work mo, sadyang ayaw mo lang gumawa." -Koda',
+  '"Can you draw me?" -people',
+  '"PLEASEEE work on your color theory haaa"',
+  "You are allowed to outgrow the version of yourself that only existed to fit in.",
+  "Make something honest enough that someone else feels less alone.",
+  '"Stop spending money on Red Monster."'
+];
+
+let quoteIndex = 0;
+
+function changeQuote(direction) {
+  quoteIndex = (quoteIndex + direction + quotes.length) % quotes.length;
+
+  $("quote-text").textContent = quotes[quoteIndex];
+  $("quote-count").textContent =
+    String(quoteIndex + 1).padStart(2, "0") +
+    " / " +
+    String(quotes.length).padStart(2, "0");
+}
+
+$("quote-prev").addEventListener("click", () => changeQuote(-1));
+$("quote-next").addEventListener("click", () => changeQuote(1));
+changeQuote(0);
+
+/* DRAWING BOARD */
+
+const canvas = $("drawing");
+const ctx = canvas.getContext("2d");
+
+let strokes = [];
+let currentStroke = null;
+
+function paintStroke(stroke) {
+  if (!ctx) return;
+
+  ctx.save();
+  ctx.strokeStyle = stroke.color;
+  ctx.fillStyle = stroke.color;
+  ctx.lineWidth = stroke.size;
+  ctx.lineCap = "round";
+  ctx.lineJoin = "round";
+
+  if (stroke.points.length === 1) {
+    ctx.beginPath();
+    ctx.arc(
+      stroke.points[0].x,
+      stroke.points[0].y,
+      stroke.size / 2,
+      0,
+      Math.PI * 2
+    );
+    ctx.fill();
+  } else {
+    ctx.beginPath();
+    ctx.moveTo(stroke.points[0].x, stroke.points[0].y);
+
+    stroke.points.slice(1).forEach(point => {
+      ctx.lineTo(point.x, point.y);
+    });
+
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+function redraw() {
+  if (!ctx) return;
+
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  strokes.forEach(paintStroke);
+
+  if (currentStroke) paintStroke(currentStroke);
+}
+
+function drawingPoint(event) {
+  const rect = canvas.getBoundingClientRect();
+
+  return {
+    x: Math.max(
+      0,
+      Math.min(
+        canvas.width,
+        (event.clientX - rect.left) * canvas.width / rect.width
+      )
+    ),
+    y: Math.max(
+      0,
+      Math.min(
+        canvas.height,
+        (event.clientY - rect.top) * canvas.height / rect.height
+      )
+    )
+  };
+}
+
+function updateUndo() {
+  $("draw-undo").disabled = strokes.length === 0;
+}
+
+canvas.addEventListener("pointerdown", event => {
+  if (!ctx || currentStroke) return;
+  if (event.pointerType === "mouse" && event.button !== 0) return;
+
+  const rect = canvas.getBoundingClientRect();
+  canvas.setPointerCapture(event.pointerId);
+
+  currentStroke = {
+    pointerId: event.pointerId,
+    color: $("brush-tool").value === "eraser"
+      ? "#ffffff"
+      : $("brush-color").value,
+    size: Number($("brush-size").value) * canvas.width / rect.width,
+    points: [drawingPoint(event)]
+  };
+
+  redraw();
+  $("draw-status").textContent = "";
+});
+
+canvas.addEventListener("pointermove", event => {
+  if (!currentStroke || event.pointerId !== currentStroke.pointerId) return;
+  currentStroke.points.push(drawingPoint(event));
+  redraw();
+});
+
+function finishStroke(event) {
+  if (!currentStroke || event.pointerId !== currentStroke.pointerId) return;
+
+  strokes.push(currentStroke);
+  currentStroke = null;
+  updateUndo();
+}
+
+canvas.addEventListener("pointerup", finishStroke);
+canvas.addEventListener("pointercancel", finishStroke);
+canvas.addEventListener("lostpointercapture", finishStroke);
+
+$("draw-undo").addEventListener("click", () => {
+  strokes.pop();
+  redraw();
+  updateUndo();
+});
+
+$("draw-clear").addEventListener("click", () => {
+  strokes = [];
+  currentStroke = null;
+  redraw();
+  updateUndo();
+  $("draw-status").textContent = "A fresh little canvas.";
+});
+
+$("brush-size").addEventListener("input", () => {
+  $("size-value").textContent = $("brush-size").value;
+});
+
+$("draw-save").addEventListener("click", () => {
+  canvas.toBlob(blob => {
+    if (!blob) {
+      $("draw-status").textContent =
+        "The drawing could not be saved. Please try again.";
+      return;
+    }
+
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = "a-little-doodle-for-heart.png";
+    document.body.append(link);
+    link.click();
+    link.remove();
+
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+
+    $("draw-status").textContent =
+      "Your PNG is ready to download. It has not been sent to Heart.";
+  }, "image/png");
+});
+
+redraw();
+updateUndo();
+
+/* COMMISSION LINKS AND FORM VALIDATION */
+
+document.querySelectorAll(".pick-type").forEach(link => {
+  link.addEventListener("click", () => {
+    $("commission-type").value = link.dataset.type;
+  });
+});
+
+document.querySelectorAll(".email-form").forEach(form => {
+  form.addEventListener("submit", event => {
+    for (const name of ["name", "message"]) {
+      const field = form.elements.namedItem(name);
+      field.value = field.value.trim();
+
+      if (!field.value) {
+        event.preventDefault();
+        field.setCustomValidity("Please fill in this field.");
+        field.reportValidity();
+
+        field.addEventListener("input", () => {
+          field.setCustomValidity("");
+        }, { once: true });
+
+        return;
+      }
+    }
+  });
+});
+
+/* START THE PORTFOLIO */
 
 $("year").textContent = new Date().getFullYear();
 route();
